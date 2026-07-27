@@ -13,7 +13,7 @@
 >hello_cube.py
 
 ### Action:
->[esmoss@fslpws0008 hello_cube]$ ./hello_cube.py 
+>[esmoss@pws0008 hello_cube]$ ./hello_cube.py 
 
 I was trying to run the program hello_cube.py
 
@@ -148,7 +148,7 @@ Today was a day to learn how Virgo interacts with other files and software.
 ---
 title: Virgo User Interaction Process
 ---
-flowchart TD
+flowchart LR
   self.create_actor
   Virgo.py --consumes information--> scene.yml --pushes info to --> VirgoScene:2016  --> self.scene 
 
@@ -411,7 +411,7 @@ Need to make the run function call for the die to be rolled again.
 
 ### Error produced:
 
-(.venv) [esmoss@fslpws0008 pdb-tutorial]$ python main.py 
+(.venv) [esmoss@pws0008 pdb-tutorial]$ python main.py 
 Add the values of the dice
 It's really that easy
 What are you doing with your life.
@@ -554,7 +554,7 @@ Virgo repo
 Learn and record how to work more efficiently with git
 
 ### Error produced:
-(.venv) esmoss@fslpws0008:~/virgo$ git status
+(.venv) esmoss@pws0008:~/virgo$ git status
 On branch 32-support-rectangular-prism-prefab
 Your branch is up to date with 'origin/32-support-rectangular-prism-prefab'.
 
@@ -564,7 +564,7 @@ Changes not staged for commit:
         modified:   VirgoActor.py
 
 no changes added to commit (use "git add" and/or "git commit -a")
-(.venv) esmoss@fslpws0008:~/virgo$ 
+(.venv) esmoss@pws0008:~/virgo$ 
 
 ### Solution:
 | git restore . | **or** | git restore <whole damn path -> Virgo |
@@ -584,7 +584,7 @@ Create a unit test for the cylinder dimensions in Virgo
 ## Notes on day:
 In thinlinc, I had difficulties getting back into the virtual environment.
 I fixed it by going to the virgo directory and putting in this command **python3.11 -m venv .venv && source .venv/bin/activate**.
-This put me back into **(.venv) esmoss@fslpws0008:~/virgo$**.
+This put me back into **(.venv) esmoss@pws0008:~/virgo$**.
 
 
 To run a unit test, you write **python -m unittest <filename>**.
@@ -612,9 +612,9 @@ There is also a **self.assertNotEqual(A, B)** says 'If A and B are not equal gre
 Also, look into the module **unittest**.
 
 ok. Big news. I made a commit. 
->(.venv) esmoss@fslpws0008:~/virgo$ git log
+>(.venv) esmoss@pws0008:~/virgo$ git log
 >commit c8704d339cdd6280da3ee0ea49615304489edd8f (HEAD -> 32-support-rectangular-prism-prefab)
->Author: Moss <esmoss@fslpws0008.fsl.jsc.nasa.gov>
+>Author: Moss <esmoss@pws0008..jsc.nasa.gov>
 >Date:   Tue Jun 30 11:46:15 2026 -0500
 >
 >    In ut_VirgoActor.py:133,134 Ethan added assert lines for scale and dimensions.
@@ -650,48 +650,55 @@ No child items are currently assigned. Use child items to break down work into s
 ### Git Path
 ```mermaid
 ---
-title: My Git Path So Far
+title: My Git Path For Prefab
 config:
-  logLevel: 'debug'
-  theme: 'base'
-  gitGraph:
-    showBranches: True
+  theme: 'dark'
 ---
 
     gitGraph
       commit id: "7d0acf..."
       commit id: "f0a70e..."
 
-      branch "ethan practice"
+      branch "Practice Branch"
       
 
       checkout main
       
-      branch "32-support-rectangular-prism-prefab"
+      branch "Akshita 32-support-rectangular-prism-prefab"
 
-      commit id: "Akshita's Branch"
+      commit id: "Akshita's Branch" 
 
-      checkout "ethan practice"
-      commit type: REVERSE id: "finished with practice"
+      checkout "Practice Branch"
+      commit id: "finished with practice" type: HIGHLIGHT
 
-      checkout "32-support-rectangular-prism-prefab"
+      checkout "Akshita 32-support-rectangular-prism-prefab"
       commit id: "d370bc... merge request"
 
-      branch "ethan finally gets to work"
-      commit id: "nothing yet"
-
-      commit type: REVERSE id: "yet another babe lost to the wind"
-
-      checkout main
-      merge  "32-support-rectangular-prism-prefab"
-      commit id: "has not been merged yet"
+      branch "Ethan 32-support-rectangular-prism-prefab"
+      commit id: "cc25452b478b0dd1ab8e87b90ff6c56dfc0a4747"
+      commit id: "cd84b487062f09e3e93acb5c5ebb8f2192e87003"
+      commit id: "88be8497a601904c77badec43aa95304a515e67b"
+      commit id: "7eedb20f5dfbddfd1bbb401dcf62dcceec465912"
+      commit id: "yet another babe lost to the wind" type: HIGHLIGHT
 
       checkout main
-      branch "Ok, For real this time"
-      commit id: "<making tests"
-      commit id: "more tests"
+      merge  "Akshita 32-support-rectangular-prism-prefab"
+      commit 
+```
+---
+```mermaid
+---
+title: Enable/Disable trails
+config:
+  logLevel: 'debug'
+  theme: 'base'
+---
+    gitGraph:
+      checkout main
+      branch "39-add-enable-disable-trails"
+      commit id: "o7"
+      commit id: "07"
       commit id: "just making some tests"
-      
 ```
 
 ---
@@ -712,7 +719,7 @@ sometimes,
 
 ```
 {
-(.venv) esmoss@fslpws0008:~/virgo/tests$ python -m unittest ut_VirgoActor.
+(.venv) esmoss@pws0008:~/virgo/tests$ python -m unittest ut_VirgoActor.
 >VirgoActorTestCase.test_init_with_cylinder 
 >Visualizing ut_VirgoActor.VirgoActorTestCase.test_init_with_cylinder. Exit window (q) to continue.
 > /home/esmoss/virgo/tests/ut_VirgoActor.py(143)test_init_with_cylinder()
@@ -916,34 +923,36 @@ FAILED (errors=2)
 
 ### The working functions
 ```
+IN Virgo.VirgoScene:2547 - 2568 
 {
-   ~# Enable Trails Function~
-    ~@virgo_console~  
-    ~def enable_trails(self):~
-        ~"""Turn ON actor trails and start calculating math"""~
-        ~# 1. Flip the master math flag (so the simulation knows to record)~
-        ~self.record_trails = True~ 
-        ~# 2. Turn on the visuals for all nodes~
-        ~for n in self.nodes:~
-            ~if not self.nodes[n].is_trail_visible():~
-                ~self.nodes[n].show_trail()~
-        ~print("Trails ENABLED")~
+   # Enable Trails Function
+    @virgo_console  
+    def enable_trails(self):
+        """Turn ON actor trails and start calculating math"""
+        # 1. Flip the master math flag (so the simulation knows to record)
+        self.record_trails = True 
+        # 2. Turn on the visuals for all nodes
+        for n in self.nodes:
+            if not self.nodes[n].is_trail_visible():
+                self.nodes[n].show_trail()
+        print("Trails ENABLED")
 
-    ~# Disable Trails Function~
-    ~@virgo_console~
-    ~def disable_trails(self):~
-        ~"""Turn OFF actor trails and stop calculating math"""~
-        ~# 1. Flip the master math flag (so the simulation stops recording)~
-        ~self.record_trails = False~
-        ~# 2. Turn off the visuals for all nodes~
-        ~for n in self.nodes:~
-            ~if self.nodes[n].is_trail_visible():~
-                ~self.nodes[n].hide_trail()~
-       ~print("Trails DISABLED")~
+    # Disable Trails Function
+    @virgo_console
+    def disable_trails(self):
+        """Turn OFF actor trails and stop calculating math"""
+        # 1. Flip the master math flag (so the simulation stops recording)
+        self.record_trails = False
+        # 2. Turn off the visuals for all nodes
+        for n in self.nodes:
+            if self.nodes[n].is_trail_visible():
+                self.nodes[n].hide_trail()
+        print("Trails DISABLED")
 }
 ```
 ### The working tests
 ```
+IN ut_VirgoScene.VirgoSceneInitTestCase:77 - 91
 {
  def test_enable_trails(self):
         """
@@ -1004,33 +1013,707 @@ It said that an *Attribute* is a variable that belongs to the object (like self.
 Ensure that the Gantt Chart at the bottom of the doc is updated daily.
 Needs to be finalized first though with work items and hopeful deadlines.
 
+
 ---
 
 # Date: 07/07/26 
 
 ## Goals for the Day
+[/]get push(s) to go through.  
+[x]make some tests for the cube and the cylinder  
+[ ]look into the new work item, *make our own axes*
+
+## Notes on day:
+Oh my days. I thought my push from the first was fine, but there were some things i forgot to clean up.
+I was also working on the mood object to be added to the mesh folder.
+Did not finish because needed to correct my branch push.
+Now I need to make some tests for the cube and cylinder pre-fabs.
+After that I have a new Work Item, 
+>**Consider rolling our own axes as vtkAxesActor bounding box does not behave** 
+
+>"Described in detail here: https://discourse.vtk.org/t/vtkaxesactor-bounding-box-appears-to-be-affected-by-its-world-position/16290/2, I'm not convinced we're going to get a resolution to this from the VTK folks and our workaround which is to "use a sparingly as it turns off camera clipping computations" is not going to hold up long term.
+>We may choose to abandon the vtkAxesActor and build our own frame for nodes using more primitive 3D arrows and/or lines. This may be our only choice as visualizing where frames are is a must and we can't seem to get an answer to the bounding box issue described in the VTK discourse link above."
+
+*making this addition on the 7th* \
+My git branch was hecked up, so Dan came and saved the day.
+I had two different work items (issues) on the same branch.
+I **think** this is what happened (trying to remember).
+This is the terminal history  of what happened.
+
+```
+{
+  643  git checkout -b 39-add-enable-disable-trails origin/master
+  644  git branch
+  645  git checkout 32-support-rectangular-prism-prefab -- tests/ut_VirgoScene.py Virgo.py
+  646  git status
+  647  git diff --cached
+  648  git commit
+  649  git push
+  650  git push origin 39-add-enable-disable-trails
+  651  git branch
+  652  git checkout 39-add-enable-disable-trails
+  653  git checkout origin/master -- tests/ut_VirgoScene.py Virgo.py 
+  654  git status
+  655  git diff cache
+  656  git diff --cache
+  657  git diff --cached
+  658  git commit
+  659  git branch
+  660  git reset --hard HEAD
+  661  git checkout 32-support-rectangular-prism-prefab
+  662  git branch
+  663  git status
+  664  git commit
+  665  git push origin 32-support-rectangular-prism-prefab
+  666  git branch
+  667  git diff --cached
+  668  git diff
+  669  git diff --help
+  670  git diff origin/master 32-support-rectangular-prism
+  671  git log
+  672  git diff 32-support-rectangular-prism-prefab origin/32-support-rectangular-prism-prefab
+  673  git diff origin/32-support-rectangular-prism-prefab  32-support-rectangular-prism-prefab
+  674  git diff origin/32-support-rectangular-prism-prefab  HEAD/32-support-rectangular-prism-prefab
+  675  git diff origin/master HEAD
+}
+```
+
+This was when Akshita pushed to 32-support-rectangular-prism-prefab.
+I got confused and thought I messed something up.
+This is the terminal history of what happened. #LostToy
+
+```
+{
+  643  git checkout -b 39-add-enable-disable-trails origin/master
+  644  git branch
+  645  git checkout 32-support-rectangular-prism-prefab -- tests/ut_VirgoScene.py Virgo.py
+  646  git status
+  647  git diff --cached
+  648  git commit
+  649  git push
+  650  git push origin 39-add-enable-disable-trails
+  651  git branch
+  652  git checkout 39-add-enable-disable-trails
+  653  git checkout origin/master -- tests/ut_VirgoScene.py Virgo.py 
+  654  git status
+  655  git diff cache
+  656  git diff --cache
+  657  git diff --cached
+  658  git commit
+  659  git branch
+  660  git reset --hard HEAD
+  661  git checkout 32-support-rectangular-prism-prefab
+  662  git branch
+  663  git status
+  664  git commit
+  665  git push origin 32-support-rectangular-prism-prefab
+  666  git branch
+  667  git diff --cached
+  668  git diff
+  669  git diff --help
+  670  git diff origin/master 32-support-rectangular-prism
+  671  git log
+  672  git diff 32-support-rectangular-prism-prefab origin/32-support-rectangular-prism-prefab
+  673  git diff origin/32-support-rectangular-prism-prefab  32-support-rectangular-prism-prefab
+  674  git diff origin/32-support-rectangular-prism-prefab  HEAD/32-support-rectangular-prism-prefab
+  675  git diff origin/master HEAD
+}
+```
+
+## Situation
+
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+
+# Date: 07/08/26 
+
+## Goals for the Day
+[x]get push(s) to go through.  
+This push is for the *enable_trails()* and *disable_trails()* functions. 
+Which is the 39-add-enable-disable-trails branch.
+Also for branch 32-support-rectangular-prism-prefab.
+~~currently having issues with getting it to work WITHOUT *self.record_trails*~~
+[x]make some tests for the ~~cube and the~~ cylinder.
+~~I think this is might be unnecessary.~~ 
+~~Although, it would be good practice anyway.~~ 
+[ ]look into the new work item, *make our own axes*
+[-]Add the Mars obj to Virgo
+
+## Notes on day:
+Dan gave some feedback on the 32-support-rectangular-prism-prefab merge request.
+My to-do's:
+ut_VirgoActor.py
+  [x] Spelling mistake in line 169
+  [x] Add test_init_with_dimensions_and_scale_cylinder
+  - this will make the cylinder larger by scaling it
+
+## Situation
+
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+
+# Date: 07/09/26 
+
+## Goals for the Day
+[] Start on the custom axes issue<br>
+&ensp;[] Create the assembly<br>
+&ensp;[] Find out where to put it in the code<br>
+[] Make a function for the custom axes<br>
+&ensp;[] Make tests for said function<br>
+[] Fix the enable and disable trails functions<br>
+&ensp; - Dan wants enable trails to function in a similar way to toggle_trails() calls self.nodes[n].show() for all nodes. The inverse should happen for disable trails<br>
+&ensp; [] fix enable_trails()<br>
+&ensp; [] fix disable_trails()<br>
+
+```mermaid
+kanban
+  column1[Newline and Indent in Markdown]
+    task1[To make a newline in Markdown, use <br>'< b r >'<br>with no spaces.]
+    task1[To make an indent in Markdown, use <br>'& e n s p ;'<br>with no spaces.]
+```
+## Notes on day:
+So, yesterday was a big day. The cylinder scale issue was resolved and merged into master.<br>
+>Here is the VIRGO_PREFAB:cylinder code
+```
+VirgoActor.py:376
+elif 'VIRGO_PREFAB:cylinder' in str(mesh):
+            self.source = vtkCylinderSource()
+            self.source.SetHeight(1.0)         # Set height to 3 units
+            self.source.SetRadius(0.5)         # Set radius to 1 unit
+            self.source.SetCenter(0.0, 0.0, 0.0) # 
+            self.source.SetResolution(50)      # Use 50 facets for a smooth cylinder
+            self.source.SetCapping(True)       # Ensure the bases are capped
+            # Create a mapper to map the cube's geometry to graphics primitives
+            mapper.SetInputConnection(self.source.GetOutputPort())
+```
+>My contribution
+```
+ut_VirgoActor.py:170
+    def test_init_with_dimensions_cylinder(self):
+        """
+        Test the VIRGO_PREFAB:cylinder option with custom dimensions - regular case
+        """
+        self.instance = VirgoActor(mesh="VIRGO_PREFAB:cylinder", dimensions=[5, 1])
+        #self.vis(actors=self.instance, show_origin=1, show_grid=1)
+        self.instance.initialize()
+        self.assertEqual(self.instance.GetScale(), (1.0, 1.0, 1.0))
+        #self.vis(actors=self.instance, show_origin=1, show_grid=1)
+        bb = self.instance.GetBounds()
+        # Z radius is at midpoint of line between vertices
+        assert_allclose(bb, [-1.0, 1.0, -2.5, 2.5, -0.9980267286300659, 0.9980267286300659])
+
+    def test_init_with_dimensions_and_scale_cylinder(self):
+        """
+        Test the VIRGO_PREFAB:cylinder option with custom dimensions - regular case
+        """
+        self.instance = VirgoActor(mesh="VIRGO_PREFAB:cylinder", dimensions=[5.0, 1.0], scale=2.0)
+        #self.vis(actors=self.instance, show_origin=1, show_grid=1)
+        self.instance.initialize()
+        self.assertEqual(self.instance.GetScale(), (2.0, 2.0, 2.0))
+        #self.vis(actors=self.instance, show_origin=1, show_grid=1)
+        bb = self.instance.GetBounds()
+        # Z radius is at midpoint of line between vertices
+        assert_allclose(bb, [-2.0, 2.0, -5.0, 5.0, -1.99605345726, 1.99605345726])
+
+    def test_init_with_zero_dimensions_cylinder(self):
+        """
+        Test the VIRGO_PREFAB:cylinder option with custom dimensions - zero error case
+        """
+        with self.assertRaises(ValueError):
+            self.instance = VirgoActor(mesh="VIRGO_PREFAB:cylinder", dimensions=[0,0])
+            #self.vis(actors=self.instance, show_origin=1, show_grid=1)
+```
+These tests made sure the function can be called and values can be placed in for the dimensions and the scale. 
+Both independently and simultaneously.
+
+
+## Situation
+
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and/or solution: 
+
+**INFORMAL TECH TALK MEETING NOTES**
+Camera clipping range, and this is relivenet to the axes work item.
+Auto-Fitting with ResetCameraClippingRange()
+**This is a problem because of the graphics card**
+- the graphics card can only do single point ??accuracy??
+- the vtkAxesActor was created to be used by the vtkOrientationMarkerWidget
+
+*question for dan*,<br>
+are these axes all pointed in the respective x, y and z axes for the universe?<br>
+or is it on the centered object like the earth or moon?
+
+Should the clipping 'origin' be focused on the camera, because the clipping is based on that camera?<br>
+depth test is only 1e7 big/long.<br>
+background/mid-ground/foreground<br>
+
+pyproject.toml. What is a .toml file?<br>
+
+uv? like pip?<br>
+
+typically you would put all the virgo files in a directory called virgo. 
+not sure why.<br>
+
+```
+blonde dude (Jermstad, Jonathan) threw out some sort of example.
+dependencies = [
+    ...
+    "pisces @ git+ssh://git@gitlab-.jsc.nasa.gov/aamt-tools/pisces.git@main",
+]
+```
+
+
+
+
+
+---
+
+# Date: 07/10/26 
+
+## Goals for the Day
+ 
+- Dan wants enable trails to function in a similar way to toggle_trails() calls self.nodes[n].show() for all nodes. The inverse should happen for disable trails<br>
+[x] Fix the enable and disable trails functions<br>
+&ensp; [x] fix enable_trails()<br>
+&ensp; [x] fix disable_trails()<br>
 
 
 ## Notes on day:
-I had a day full of errors and learning.
-I worked on my enable_trails() and disable_trails() functions and was able to get those tests working.
-I also was able to get my tests for the CYLINDER_PREFAB to work as well. 
-Dan stopped by to help me clean up my branch because I made it with both issues work in one branch.
-This is not how we do this.
-Each issue (work item) has its own branch. 
-Once he helped me clean it up, I pushed the merges.
+what an effective day. beat my head against the problem for a while before asking Gemini for help.
 
-I can't exactly remember how we made the changes but I know that we made the new branch, copied the commits that were part of the issue for enable and disable trails. 
-These were then committed and pushed.
+Was finally able to get the functions right and also the tests associated with them.
 
-Went back into the older branch and erased the commits that were now pushed in the new branch. 
-Once that was cleaned up I made my commit. 
-Akshita did make a mistake that probably cost me an hour because I thought I messed up.
-She worked on an issue and committed it to my old branch. 
-This made my tests not work, and nearly put me in a panic.
+**Virgo.py**
+```
+    # Enable Trails Function
+    @virgo_console
+    def enable_trails(self, node=None):
+        """Turn on actor trails globally, or for a specific node."""
+        # Create a list to keep track of what we turned on
+        active_trails = []
+        # If a specific node was passed in, just turn on that one
+        if node is not None:
+            node.show_trail()
+            active_trails.append(node.name)
+        # If the parentheses were empty, loop through all nodes
+        else:
+            for n in self.nodes:
+                self.nodes[n].show_trail()
+                active_trails.append(n) # n is already the name string
+        # Actually hand the list back to the user/test!
+        return active_trails
 
-She corrected her mistake and everything went back to normal. 
-Once all was fixed, I quickly committed my changes and pushed them to gitlab.
+    # Disable Trails Function
+    @virgo_console
+    def disable_trails(self, node=None):
+        """Turn off actor trails globally, or for a specific node."""
+        # Create a list to keep track of what we turned off
+        disabled_trails = []
+        # If a specific node was passed in, just turn off that one
+        if node is not None:
+            node.hide_trail() 
+            disabled_trails.append(node.name)
+        # If the parentheses were empty, loop through all nodes
+        else:
+            for n in self.nodes:
+                self.nodes[n].hide_trail()
+                disabled_trails.append(n) # n is already the name string
+        # Hand the list back so your tests can verify it!
+        return disabled_trails
+```
+**ut_VirgoScene.py**
+```
+    def test_add_node(self):
+        # 1. Setup the scene and initialize it
+        self.instance = VirgoScene(scene=self.scene, headless=True)
+        self.instance.initialize()
+        testingScene = VirgoScene(scene=self.scene)
+        # 2. Create a node 
+        addedNode, _ = self.instance.create_node(actor=None, actor_scene_dict={})
+        addedNode.name = "New_Node"
+        # 3. Count the number of nodes before passing node into scene
+        initial_count = len(testingScene.nodes)
+        # 4. Pass node into scene
+        testingScene.add_node(addedNode)
+        # 5. Test if the count of the scenes nodes increased
+        assert len(testingScene.nodes) == initial_count + 1
+        # 6. Assert that the node created is actually in the scene
+        # and make sure its value and name match
+        assert addedNode in testingScene.nodes.values()
+        assert addedNode.name in testingScene.nodes
+        print(f"{addedNode.name} was passed through the scene")
+
+    def test_trails_on(self):
+        # 1. Setup
+        self.instance = VirgoScene(scene=self.scene, headless=True)
+        self.instance.initialize()
+        # 2. Create TWO nodes to prove the master switch actually loops!
+        node_1, _ = self.instance.create_node(actor=None, actor_scene_dict={})
+        node_1.name = "Alpha_Node"
+        node_2, _ = self.instance.create_node(actor=None, actor_scene_dict={})
+        node_2.name = "Beta_Node"
+        self.instance.add_node(node_1)
+        self.instance.add_node(node_2)
+        # 3. The Action: Call the master switch exactly ONCE
+        enabled_list = self.instance.enable_trails()
+        # 4. The Verification: Check that BOTH nodes made it into the list
+        assert node_1.name in enabled_list
+        assert node_2.name in enabled_list
+        print("enabled trails test passed!")
+
+    def test_trails_off(self):
+        # 1. Setup
+        self.instance = VirgoScene(scene=self.scene, headless=True)
+        self.instance.initialize()
+        # 2. Let's create TWO nodes to prove the master switch actually loops!
+        node_1, _ = self.instance.create_node(actor=None, actor_scene_dict={})
+        node_1.name = "Alpha_Node" # Ensure they have unique names
+        node_2, _ = self.instance.create_node(actor=None, actor_scene_dict={})
+        node_2.name = "Beta_Node"
+        self.instance.add_node(node_1)
+        self.instance.add_node(node_2)
+        # 3. Turn everything ON
+        self.instance.enable_trails()
+        # 4. The Action: Call the master switch exactly ONCE
+        disabled_list = self.instance.disable_trails()
+        # 5. The Verification: Check that BOTH nodes made it into the list
+        assert node_1.name in disabled_list
+        assert node_2.name in disabled_list
+        print("disabled trails test passed!")
+```
+
+## Situation
+Initial problem is just to make *enable_trails()* and *disable_trails()*
+The difficulty came in on finding where and how nodes were actually created in Virgo.
+I made an initial test for the initial gross enable_trails(). 
+It made its own node and passed it through the scene created and checked if it came out the same as it went in.
+Dan came by to check on me. 
+He spoke some truth and wisdom nuggets as he usually does. 
+It was a bit over my head at the time, but I wrote down what I understood from the convo.
+
+From what I understood, he wanted the test I had made where the node is created, passes it through the scene for the test, and checks if its the same on the other side. 
+He liked it but wanted it to utilize the Virgo native functions and files.
+So the earch for how Virgo created its nodes was on.
+
+
+I found, using grep (specifically "grep  -rn --exculde-dir=".venv" "def add_node"), the function that creates the nodes. I found it in VirgoDataPlayback.py on line 46.
+Afterwards I found it, the same damn thing, in Virgo.py line 2223. Not sure why it is redundant on there, and will tell Dan about that.
+
+Anyways, now Gemini could actually help me make the actual functions.
+
+Gemini says 
+```
+# 1. You must create the node first (and it MUST have a name)
+my_new_node = Node(name="Database_Node") # The exact arguments might vary
+
+# 2. Add it to the ControlCenter/Scene
+my_scene.add_node(my_new_node)
+
+# 3. (Optional) Add another node and make it a child of the first one
+child_node = Node(name="Query_Node")
+my_scene.add_node(child_node, parent_name="Database_Node")
+```
+
+The way that nodes are created goes
+```
+my_new_node, parent_name = self.instance.create_node(actor=None, actor_scene_dict={})
+```
+### Where:
+
+
+### File: 
+ut_VirgoScene.py
+Virgo.py
+
+### Action: 
+
+### Error(s) produced:
+
+### Solution: 
+The code below is the solutions for the enable and disable trails functions and their respective tests are below.
+
+### Notes on issue and solution: 
+    def create_node(self, actor, actor_scene_dict=None, _class=VirgoSceneNode):
+        """
+        Creates a VirgoSceneNode associated with actor from the information
+        in actor_scene_dict. This function also maps the data in the
+        driven_by: section of the actor_scene_dict to a data_source in
+        the created node. The result is a VirgoSceneNode ready to be
+        included in the larger VirgoDataPlayback framework via
+        self.add_node()
+
+        Args:
+          _class (cls): Class to instantiate, must be or derive from VirgoActor
+
+        Returns: Tuple of (VirgoSceneNode, parent_name [str])
+        """
+        node, parent_name = super().create_node(actor=actor, actor_scene_dict=actor_scene_dict, _class=_class)
+
+        # Figure out the details of how the actor/node is driven and produce a
+        # VirgoDataSource with the data from the driven_by: specification and
+        # assign that data source to node vis node.set_data_source.
+        positions = None
+        rotations = None
+        scales = None
+        opacities = None
+        times = None
+        driven_by = None
+        additional_data={}
+        if 'driven_by' in actor_scene_dict and actor_scene_dict['driven_by'] != None:
+            driven_by= dict(actor_scene_dict['driven_by']) # make a copy
+            if 'time' in driven_by and  driven_by['time'] != None:
+                times = self.vdl.get_alias_datas(alias=driven_by['time'])
+            if 'pos' in driven_by and  driven_by['pos'] != None:
+                positions= self.vdl.get_alias_datas(alias=driven_by['pos'])
+            if 'rot' in driven_by and  driven_by['rot'] != None:
+                rotations = self.vdl.get_alias_datas(alias=driven_by['rot'])
+            if 'scale' in driven_by and  driven_by['scale'] != None:
+                scales = self.vdl.get_alias_data(alias=driven_by['scale'])
+            if 'opacity' in driven_by and  driven_by['opacity'] != None:
+                opacities = self.vdl.get_alias_data(alias=driven_by['opacity'])
+            if 'transpose_rot' in driven_by and  driven_by['transpose_rot'] != None:
+                node.set_transpose_dcm(driven_by['transpose_rot'])
+
+        if ('provide_data' in actor_scene_dict and 
+            actor_scene_dict['provide_data'] != None):
+            provide_data= dict(actor_scene_dict['provide_data']) # make a copy
+            add_data= list(provide_data['aliases'])              # make a copy
+            # For every additional_data requested, get the full time-history
+            # of that data from the data loader
+            for alias in add_data:
+                additional_data[alias] = self.vdl.get_alias_data(alias=alias)
+            # In the case where driven_by isn't given, times must be populated
+            # for the VirgoDataFileSource construction, so get it from the
+            # provide_data: time: value. TODO: It would be nice if this was
+            # more intuitive as the class needs times but there's 2 ways it
+            # can be specified by the user here so this feels kinda clunky
+            #  -Jordan 6/2026
+            if times == None:
+                times = self.vdl.get_alias_datas(alias=provide_data['time'])
+
+        if ( positions or rotations or scales or opacities or times or
+             additional_data):
+            # Create the data source. Pass additional_data dict through as kwargs
+            # which make those aliases available to the node
+            vds = VirgoDataFileSource(times=times, rotations=rotations,
+                                      positions=positions, scales=scales,
+                                      opacities=opacities, **additional_data )
+            vds.initialize()
+            node.set_data_source(vds)
+            #import pdb; pdb.set_trace()
+
+
+        # If labels: are provided for the node/actor, 
+        if 'labels' in actor_scene_dict:
+            labels = actor_scene_dict['labels']
+            for label in labels:
+                if labels[label] == None:
+                    continue
+                # TODO: can we just node.get_label(label).get_text() here instead?
+                if 'text' in labels[label]:
+                  text = labels[label]['text']
+                vds_for_labels = self.get_data_source_from_label_text(label_text=text)
+                node.get_label(label).set_data_source(data_source=vds_for_labels)
+
+        return node, parent_name
+---
+*steralized version**
+    def create_node(self, actor, actor_scene_dict=None, _class=SceneNode):
+        """
+        Creates a SceneNode associated with actor from the information
+        in actor_scene_dict. This function also maps the data in the
+        driven_by: section of the actor_scene_dict to a data_source in
+        the created node. The result is a SceneNode ready to be
+        included in the larger DataPlayback framework via
+        self.add_node()
+
+        Args:
+          _class (cls): Class to instantiate, must be or derive from Actor
+
+        Returns: Tuple of (SceneNode, parent_name [str])
+        """
+        node, parent_name = super().create_node(actor=actor, actor_scene_dict=actor_scene_dict, _class=_class)
+
+        # Figure out the details of how the actor/node is driven and produce a
+        # DataSource with the data from the driven_by: specification and
+        # assign that data source to node vis node.set_data_source.
+        positions = None
+        rotations = None
+        scales = None
+        opacities = None
+        times = None
+        driven_by = None
+        additional_data={}
+        if 'driven_by' in actor_scene_dict and actor_scene_dict['driven_by'] != None:
+            driven_by= dict(actor_scene_dict['driven_by']) # make a copy
+            if 'time' in driven_by and  driven_by['time'] != None:
+                times = self.vdl.get_alias_datas(alias=driven_by['time'])
+            if 'pos' in driven_by and  driven_by['pos'] != None:
+                positions= self.vdl.get_alias_datas(alias=driven_by['pos'])
+            if 'rot' in driven_by and  driven_by['rot'] != None:
+                rotations = self.vdl.get_alias_datas(alias=driven_by['rot'])
+            if 'scale' in driven_by and  driven_by['scale'] != None:
+                scales = self.vdl.get_alias_data(alias=driven_by['scale'])
+            if 'opacity' in driven_by and  driven_by['opacity'] != None:
+                opacities = self.vdl.get_alias_data(alias=driven_by['opacity'])
+            if 'transpose_rot' in driven_by and  driven_by['transpose_rot'] != None:
+                node.set_transpose_dcm(driven_by['transpose_rot'])
+
+        if ('provide_data' in actor_scene_dict and 
+            actor_scene_dict['provide_data'] != None):
+            provide_data= dict(actor_scene_dict['provide_data']) # make a copy
+            add_data= list(provide_data['aliases'])              # make a copy
+            # For every additional_data requested, get the full time-history
+            # of that data from the data loader
+            for alias in add_data:
+                additional_data[alias] = self.vdl.get_alias_data(alias=alias)
+            # In the case where driven_by isn't given, times must be populated
+            # for the DataFileSource construction, so get it from the
+            # provide_data: time: value. TODO: It would be nice if this was
+            # more intuitive as the class needs times but there's 2 ways it
+            # can be specified by the user here so this feels kinda clunky
+            #  -Jordan 6/2026
+            if times == None:
+                times = self.vdl.get_alias_datas(alias=provide_data['time'])
+
+        if ( positions or rotations or scales or opacities or times or
+             additional_data):
+            # Create the data source. Pass additional_data dict through as kwargs
+            # which make those aliases available to the node
+            vds = DataFileSource(times=times, rotations=rotations,
+                                      positions=positions, scales=scales,
+                                      opacities=opacities, **additional_data )
+            vds.initialize()
+            node.set_data_source(vds)
+            #import pdb; pdb.set_trace()
+
+
+        # If labels: are provided for the node/actor, 
+        if 'labels' in actor_scene_dict:
+            labels = actor_scene_dict['labels']
+            for label in labels:
+                if labels[label] == None:
+                    continue
+                # TODO: can we just node.get_label(label).get_text() here instead?
+                if 'text' in labels[label]:
+                  text = labels[label]['text']
+                vds_for_labels = self.get_data_source_from_label_text(label_text=text)
+                node.get_label(label).set_data_source(data_source=vds_for_labels)
+
+        return node, parent_name
+---
+
+# Date: 07/13/26 
+
+## Goals for the Day
+[/] Begin working on the VirgoAxesActor
+&ensp;[] Make the arrows
+&ensp;[] Make those arrows into an assembly
+
+## Notes on day:
+Added some file ?types? to my ".gitignore"
+".gitignore" can utilize * as a wildcard that will match whatever you put next to it and hunt down files that are attached to the *.
+In my case I put *.swp. 
+Git will search down and file ending in .swp and ignore it.
+The other is __pycache__/.
+Git will ignore all files inside of the __pycache__ folder now.
+
+![alt text](<Screenshot 2026-07-13 130312.png>)
+
+So I was able to make the virgoAxesActor, but Dan said it would be better to do it with just the arrow meshes.
+This way it'll be easier to make it if it only uses arrows, not cones and cylinders.
+
+### Dan Notes on enable/disable trails merge request
+#### tests/ut_VirgoScene.py
+**test_add_node**
+- The test_add_node function created the VirgoScene multiple times unnecessarily.
+- just need to use *self.instance* because that is the scene.
+- There is no need to use another new *testingScene* that initiates another VirgoScene
+- Also, it is not required to use *headless=true*
+- Need to fix the asserts
+  - while they are technically correct there are unittest [conventions](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug) to follow.
+  - These should be changed to self.assert*()
+- Apparently this created a weird error that Dan is going to follow up on with a separate work item.
+  >  File "/Users/ddjorda1/dev/virgo/Virgo.py", line 743, in on_timer
+  >    self.update()
+  >  <br>File "/Users/ddjorda1/dev/virgo/Virgo.py", line 431, in update
+  >    self.configure_renderers()
+  >  <br>File "/Users/ddjorda1/dev/virgo/Virgo.py", line 551, in configure_renderers
+  >    self.renderers[current_layer].RemoveActor(assembly)
+- Nodes need to be added before *self.instance.initialize()* is called.
+**test_trails_off**
+- A lot of the same comments apply to this function as well, so recheck through all of those on this and following functions.
+- make sure to delete irrelevant comments and code, like "master switch" which is never called on in the code.
+#### Virgo.py
+>Overall a much better approach here so kudos on that! 
+>I probably should have guided you on this a bit sooner but I think these new functions need to live in the VirgoControlCenter class (in the same file), not in VirgoScene class. 
+>Two reasons - the first is that @virgo_console is only valid for VirgoControlCenter (notice your new functions don't show up in help in the virgo console), and this is the class intended to "control the scene", so that's where functions that control the scene should go. 
+>Accordingly we'll need to move these two tests for these new functions from ut_VirgoScene.py to ut_VirgoControlCenter.py. 
+>I would recommend we remove the add_node() calls from these test_trails_*() tests as well and use the simpler method of just adding a new actor to self.scene() below line 30 here. 
+>The add_node() approach should work but add_node() only exists in the VirgoScene class which doesn't exist in ut_VirgoControlCenter.py. 
+>I'm going to try to take your branch and flesh out a skeleton for tests in that new file to make sure we don't run into any other architectural issues, so stand by on this MR until I push commits to your branch.
+>Interesting enhancement idea for specifying an individual node to alter. 
+>Your function docstring doesn't explain that option though, nor does it say what is expected to be returned, which appears to be a list of names of nodes that were modified by the function.  
+>Furthermore, there's no check that node is of type SceneNode, which means someone could call this with node='mynodename' (a string, not a Node) and then line 2533 would error.
+>Before we jump into adding all that documentation and new error checking code - this is great example of how we can do practically anything in software, but the question of "should we do this?" is the harder one to answer. 
+>Meaning, "should we provide the node as an optional argument for turning a single node's trail on?". 
+>For that I like to think about how it would be used by an end user. 
+>Issue #39 is intended to help a user enable/disable all nodes at once (keep them from having to write the dictionary loop you are doing), so how hard is it right now for a user to disable a single node? 
+>Would looks something like this in VirgoControlCenter:
+```
+# In a class that inherits from `VirgoControlCenter`, to disable a
+# trail for a node with name 'mynodename':
+self.get_node(name='mynodename').hide_trail()
+
+```
+>So a user can disable one named Node with one line of code. 
+>Should we add all the documentation and error checking and list-of-modified-nodes logic to enable_trails() and disable_trails()? 
+>To me it looks like this is already very easy for the user, so as a design choice I'd argue we don't need node=None or any of the logic for modifying a single node at the VirgoControlCenter class level. 
+>With that logic removed, the function becomes extremely simple:
+```
+    @virgo_console
+    def enable_trails(self):
+        """Turn on all actor trails"""
+        for n in self.nodes:
+            self.nodes[n].show_trail()
+
+```
+>I do appreciate the forward thinking you've done here though and definitely a good idea if there wasn't already an easy way to enable/disable a single node's trail.
+
+So that was a lot. 
+Just a bunch of tips that I should think about while I code. 
+
 
 
 ## Situation
@@ -1048,6 +1731,614 @@ Once all was fixed, I quickly committed my changes and pushed them to gitlab.
 ### Notes on issue and solution: 
 
 
+
+---
+
+# Date: 07/14/26 
+
+## Goals for the Day
+[/] Sort out the branch 39-add-enable-disable-trails
+[/] Make progress on the new axesActor 
+
+## Notes on day:
+This is two days in the futre when im writing this. I dont really remember what i did. I know that the enable/disable functions were mentally assaulting me.
+---
+
+# Date: 07/15/26 
+
+## Goals for the Day
+[x] Sort out the branch 39-add-enable-disable-trails
+[/] Make progress on the new axesActor 
+
+## Notes on day:
+Had a meeting with Dan and Akshita. 
+They helped me understand the difference between classes, functions, and variables. 
+Also, how they interact with eachother and what they can do.
+
+Dan also said that the enable/disable functions were kindof messed up from the jump. 
+When he realized that it needed to be altered in a bunch of other files, he took the reigns and let me work on the new axesActor.
+
+I began working on the axes actor and I initially had made it with cones and cylinders. 
+Dan said he'd rather me work with the arrow actors instead because it would be less pieces. 
+I agreed and began to work on the axes.
+
+### How virgo_axes_with_arrows.py works
+There is an initial value that I intend to help scale the virgo axes.
+It is called *coordinate_val* that will scale the axes.
+This is temporarily be called *axes_scale*.
+This was chosen because VirgoNode.py (where the vtkAxesActor lives and the new axes_actor will go) has many references to this already, so i thought it might be useful in the new axes.
+
+In the parameters of the function, start_point, end_point, radius=1, colors=(1.0, 1.0, 1.0) are used.
+The start_point and end_point are used to compute the actual length of the arrow. 
+```
+    # 1. Compute the distance and vector
+    dx = end_point[0] - start_point[0]
+    dy = end_point[1] - start_point[1]
+    dz = end_point[2] - start_point[2]
+    length = math.sqrt(dx**2 + dy**2 + dz**2)
+```
+It then creates *arrow_source = vtk.vtkArrowSource()*
+
+The main problem I had was corrected here.
+Hopefully it stays corrected for Dan while Virgo changes.
+```
+    # Define the perfect aspect ratio for a 1.0-unit arrow.
+    # Because we scale uniformly later, these proportions will NEVER change.
+    arrow_source.SetShaftRadius(0.03)  # 3% of the total length
+    arrow_source.SetTipRadius(0.1)     # 10% of the total length
+    arrow_source.SetTipLength(0.3)     # 30% of the total length is the arrowhead
+```
+Before I tried to have the radius scale with the *coordinate_val* but this caused issues for the renderer due to how the radius' are coded.
+So the fix was to have the set radius attributes for vtkArrowSource as a ratio of the initial creation of vtkArrowSource.
+This way when the arrow is scaled later, the Shaft and Tip radius' are already set by being dependent of the arrow_source, not a single value.
+Later, the arrow will be transformed to accept the new scaling.
+
+Resolution is set next to 32. 
+This can be changed if it is not smooth enough.
+
+The vtk.vtkPolyDataMapper is instantiated as mapper.
+mapper then gets 
+
+
+## Situation
+There was an issue when I began to scale it, the radius could not keep up with the length. Eventually, the radius would wither to nearly nothing and you wouldnt be able to see the axes anymore when the scale was large enough. The opposite happened as you got smaller. It would get more squat and wide as if the radius, again could not keep up with the length. It would shrink faster than it's radius could.
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+---
+# Date: 07/16/26 
+
+## Goals for the Day
+[x] Make progress on the new axesActor (I definetly made progress)
+
+## Notes on day:
+I agreed and began to work on the axes.
+
+### Notes on Informal Tech Talk Meeting with Dan
+**cppcheck** will look over your code for errors.
+I think this might be a static analysis.
+**NPR-7150**
+
+VirgoAxes.py is where the virgo_axes lives now and also has its own ut_virgoAxes.py as well. 
+**Need to make a line option for the arrows to turn into**
+**In Read me line 417 to 425**
+**history !<number> and then the number on the history in your terminal will be auto run**
+
+### How virgo_axes_with_arrows.py works
+There is an initial value that I intend to help scale the virgo axes.
+It is called *coordinate_val* that will scale the axes.
+This is temporarily be called *axes_scale*.
+This was chosen because VirgoNode.py (where the vtkAxesActor lives and the new axes_actor will go) has many references to this already, so i thought it might be useful in the new axes.
+
+In the parameters of the function, start_point, end_point, radius=1, colors=(1.0, 1.0, 1.0) are used.
+The start_point and end_point are used to compute the actual length of the arrow. 
+```
+    # 1. Compute the distance and vector
+    dx = end_point[0] - start_point[0]
+    dy = end_point[1] - start_point[1]
+    dz = end_point[2] - start_point[2]
+    length = math.sqrt(dx**2 + dy**2 + dz**2)
+```
+It then creates *arrow_source = vtk.vtkArrowSource()*
+
+The main problem I had was corrected here.
+Hopefully it stays corrected for Dan while Virgo changes.
+```
+    # Define the perfect aspect ratio for a 1.0-unit arrow.
+    # Because we scale uniformly later, these proportions will NEVER change.
+    arrow_source.SetShaftRadius(0.03)  # 3% of the total length
+    arrow_source.SetTipRadius(0.1)     # 10% of the total length
+    arrow_source.SetTipLength(0.3)     # 30% of the total length is the arrowhead
+```
+Before I tried to have the radius scale with the *coordinate_val* but this caused issues for the renderer due to how the radius' are coded.
+So the fix was to have the set radius attributes for vtkArrowSource as a ratio of the initial creation of vtkArrowSource.
+This way when the arrow is scaled later, the Shaft and Tip radius' are already set by being dependent of the arrow_source, not a single value.
+Later, the arrow will be transformed to accept the new scaling.
+
+Resolution is set next to 32. 
+This can be changed if it is not smooth enough.
+
+The vtk.vtkPolyDataMapper is instantiated as mapper.
+mapper then gets 
+
+
+## Situation
+There was an issue when I began to scale it, the radius could not keep up with the length. Eventually, the radius would wither to nearly nothing and you wouldnt be able to see the axes anymore when the scale was large enough. The opposite happened as you got smaller. It would get more squat and wide as if the radius, again could not keep up with the length. It would shrink faster than it's radius could.
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+![Axes that radius relied on a scaling variable](<axes stretch.gif>)<br>
+
+![Axes that has a set ratio for radius](<new axes with no stretch-1.gif>)<br>
+
+
+---
+# Date: 07/17/26 
+
+## Goals for the Day
+[] Finish the test for start and end point in ut_ VirgoAxes.py
+[] Finish with defining the start and end point test in ut_VigroAxes.py
+[] Make a line setting for the style of the axes.
+[x] Make a length setting for an option to have one arrow be longer than the others, one shorter, or all three different lengths.
+[x] Email Sara Peternell to ask about Pathways docs need to be filled out.
+
+## Notes on day:
+*** Requirements for the VirgoAxes.py**
+```
+README.md starting at line 417
+    axes:   # The dictionary which holds information about this actor's axes
+      when: # Optional string setting for when interal axes should be
+            #   displayed with accepted values as follows:
+            #   toggled - show axes when global setting (key:'a') is toggled
+            #             This is the default option
+            #   picked  - show axes when setting toggled and actor is picked
+            #   always  - always show axes
+            #   never   - never show axes
+      style:  # Optional string setting for style of axes - line or cylinder
+      length: # Optional list of 3 floats describing the length of each axis
+              #  [x_axis, y_axis, z_axis]
+      affect_opacity: # Optional bool (0 or 1) setting for whether opacity
+                      #   of the actor should be reduced when axes are shown.
+                      #   Defaults to 1 (true).
+```
+
+### TrajOpt: A modular Python Framework for EDL Trajectory and Algorithm Design
+![Direct Methods for Trajectory Optimization](image.png)
+![Methodological development and applications ](image-1.png)<br>
+<br>
+**keywords in presentation**<br>
+Sequential convex programming and related approaches<br>
+??EDL??<br>
+Trust region<br>
+solver cvxpy, 'PIQP'<br>
+what are costs in regards to python or solvers<br>
+
+Apparently trajopt is a python software.
+
+
+README.md:
+spelling correction.
+VirgoAxes.py:
+added xlen, ylen, and zlen to VirgoAxes. 
+These allow the changing of the individual lengths of any arrow. 
+They do not affect the radius of the tip or shaft of their respective arrows.
+ut_VirgoAxes.py:
+made test for scale, and made several tests for inputing the individual lengthening of each axes.
+Also, made tests with changing two or three axes independently. 
+Made test to check negative number
+
+## Situation
+
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+# Date: 07/20/26 
+
+## Goals for the Day
+[] Go to [Exit Forms for Pathways](https://nasa.sharepoint.com/teams/JSCPathwaysInternSite/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FJSCPathwaysInternSite%2FShared%20Documents%2FSelf%20Service%2FSelf%2DService%2FExit%20Forms%20and%20Information&viewid=3b1c77fb%2D0100%2D475b%2Dba3b%2D7b1c351ab9e9&newTargetListUrl=%2Fteams%2FJSCPathwaysInternSite%2FShared%20Documents&viewpath=%2Fteams%2FJSCPathwaysInternSite%2FShared%20Documents%2FForms%2FAllItems%2Easpx) and finish your paperwork.
+[] change VirgoAxes lenght adjustment to its own function. VirgoAxes:131
+
+
+
+
+## Notes on day:
+
+```mermaid
+  graph LR
+  A[VirgoAxes.py] -- xlen --> C((create_arrow_actor))
+  A[VirgoAxes.py] -- ylen --> C((create_arrow_actor))
+  A[VirgoAxes.py] -- zlen --> C((create_arrow_actor))
+
+```
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+# Date: 07/23/26 
+
+## Goals for the Day
+[x] Meet with Brady Campbell
+[x] Work on VirgoAxes (In fact, It might be done)
+[] Work on log
+[] Work on Exit Presentation
+
+## Notes on day:
+Form JF760 and IT Assets
+  - Fill this out last
+  - click box two
+  - NOT box one
+FEHB Form POD-07
+  - Should only need amount paid per paycheck
+  - Figure out who to send it to.
+~~JSC NF1860: Approval for Outside Activity ??~~
+
+---
+The issue with the axes not shutting off.
+Success is defined as the code does as dictated
+Fail is defined as the code does NOT do as dictated
+
+test1: Success.
+Actors
+- ball: when = never
+Vectors
+- f_drag: when = never
+- f_gravity: when = never
+- f_bounce: when = never
+*reasoning*<br>
+I think the parent AND the specific children you want off both need to be never for the axes to disappear.
+
+test2: Success
+Actors
+- ball: when = never
+Vectors
+- f_drag: when = commented out
+- f_gravity: when = never
+- f_bounce: when = never
+*reasoning*<br>
+the drag axes was present
+
+test3: success
+Actors
+- ball: when = never
+Vectors
+- f_drag: when = never
+- f_gravity: when = commented out
+- f_bounce: when = never
+*reasoning*<br>
+the gravity axes was present
+
+test4: success
+Actors
+- ball: when = commented out
+Vectors
+- f_drag: when = never
+- f_gravity: when = never
+- f_bounce: when = never
+*reasoning*<br>
+the ball axes was present
+
+test5: success
+Actors
+- ball: when = commented out
+Vectors
+- f_drag: when = never
+- f_gravity: when = never
+- f_bounce: when = always
+*reasoning*<br>
+the ball, and bounce axes were present
+
+test6: success
+Actors
+- ball: when = always
+Vectors
+- f_drag: when = never
+- f_gravity: when = never
+- f_bounce: when = always
+*reasoning*<br>
+the ball, and bounce axes were present
+
+test7: success
+Actors
+- ball: when = never
+Vectors
+- f_drag: when = always
+- f_gravity: when = never
+- f_bounce: when = never
+*reasoning*<br>
+the drag axes was present
+---
+### GIT DIFF
+I made many changes to the code and i wasnt sure on when or where i made changes to it.
+i'm going to check what I did by git diff.
+
+### Whats up with VirgoAxes
+So, i've been working on VirgoAxes for some time now (about a week), and I think it might be done. 
+At least its close to it. 
+I pushed it earlier today, maybe around 1400, and the pipeline failed.
+I went and asked Akshita what to do.
+She said that Dan wanted to handle those problems.
+I asked Dan what he thought and he looked it up and showed me that the problem was that show_axes in VirgoNode was commented out.
+I had forgot to uncomment it, and all that needed to be done was uncomment and put my functions from VirgoAxes where the other functions were called at.
+I ran the tests again and everything passed. 
+I added, commited, and pushed the branch.
+It passed the pipeline. 
+Second try.
+
+### What was the initial problem with vtkAxesActor?
+
+
+
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
+# Date: xx/xx/xx 
+
+## Goals for the Day
+
+## Notes on day:
+
+## Situation
+ 
+### Where:
+
+### File: 
+
+### Action: 
+
+### Error produced:
+
+### Solution: 
+
+### Notes on issue and solution: 
+
+---
 
 
 
@@ -1056,35 +2347,72 @@ Once all was fixed, I quickly committed my changes and pushed them to gitlab.
 
 
 ---
-
-# Date: 07/xx/26 
-
-## Goals for the Day
-
-
-
-## Notes on day:
-```mermaid
-kanban
-  column1[I freakin love Markdown]
-    task1[this might be the coolest s*** ever]
+This is some code about the pdb (python debugger) and need to do a pdb tutorial
 ```
-## Situation
+{
+(.venv) [esmoss@pws0008launch]$ ./launch.py 
+Simulation complete. Output written to log_lv.csv
+[koviz] Listening on 127.0.0.1:64053
+[koviz] KovizThread started, is_alive=True
+Loading data from /home/esmoss/virgo/examples/launch...
+Done.
+> /home/esmoss/virgo/Virgo.py(2386)initialize_nodes()
+-> actors[a] = self.create_actor(actor_name=a, actor_scene_dict=self.scene['actors'][a])
+(Pdb) list
+2381 	        trails = {}
+2382 	
+2383 	        if 'actors' in self.scene and self.scene['actors'] != None:
+2384 	          for a in self.scene['actors']:
+2385 	            import pdb; pdb.set_trace()
+2386 ->	            actors[a] = self.create_actor(actor_name=a, actor_scene_dict=self.scene['actors'][a])
+2387 	            actors[a].initialize()
+2388 	
+2389 	            node, parent_name = self.create_node(actor=actors[a],
+2390 	                                                 actor_scene_dict=self.scene['actors'][a],
+2391 	                                                 _class=ancc)
+(Pdb) s
+--Call--
+> /home/esmoss/virgo/Virgo.py(2157)create_actor()
+-> def create_actor(self, actor_name, actor_scene_dict=None,):
+(Pdb) list
+2152 	        """
+2153 	        from VirgoDictVerifier import VirgoDictVerifier
+2154 	        vdv = VirgoDictVerifier(scene_dict=self.scene, yaml_file=self.scene_yaml_path)
+2155 	        self.scene = vdv.verify()
+2156 	
+2157 ->	    def create_actor(self, actor_name, actor_scene_dict=None,):
+2158 	        """
+2159 	        Given a single scene's actors: sub-entry, return a
+2160 	        VirgoActor instance built from that information
+2161 	
+2162 	        TODO all this checking for dict/YAML validity needs to be safer, i.e.
+(Pdb) pprint(actor_name)
+*** NameError: name 'pprint' is not defined
+(Pdb) print(actor_name)
+earth
+(Pdb) print(actor_scene_dict)
+{'scale': 1.0, 'opacity': 1.0, 'pos': [0.0, 0.0, 0.0], 'ypr': [0.0, 0.0, 0.0], 'color': None, 'pickable': False, 'parent': 'ecef_frame', 'backface_culling': True, 'provide_data': None, 'axes': None, 'trail': None, 'driven_by': None, 'labels': {}, 'mesh': 'VIRGO_PREFAB:wgs84-earth'}
+(Pdb) 
+}
+```
 
-### Where:
+```
+Documented commands (type help <topic>):
+========================================
+EOF    c          d        h         list      q        rv       undisplay
+a      cl         debug    help      ll        quit     s        unt      
+alias  clear      disable  ignore    longlist  r        source   until    
+args   commands   display  interact  n         restart  step     up       
+b      condition  down     j         next      return   tbreak   w        
+break  cont       enable   jump      p         retval   u        whatis   
+bt     continue   exit     l         pp        run      unalias  where    
 
-### File: 
+Miscellaneous help topics:
+==========================
+```
 
-### Action: 
+Virgo.py:2157
 
-### Error produced:
-
-### Solution: 
-
-### Notes on issue and solution: 
-
-# **EXAMPLES**
-### **KANBAN EXAMPLE**
 ```mermaid
 ---
 config:
@@ -1238,23 +2566,17 @@ kanban
     task1[Create working tasks for both *enable_trails* and *disable_trails*]
 
 ```
-
 ---
+# Template for the log
 
-# Date: 07/xx/26 
+# Date: xx/xx/xx 
 
 ## Goals for the Day
 
-
-
 ## Notes on day:
-```mermaid
-kanban
-  column1[I freakin love Markdown]
-    task1[this might be the coolest s*** ever]
-```
-## Situation
 
+## Situation
+ 
 ### Where:
 
 ### File: 
@@ -1267,30 +2589,15 @@ kanban
 
 ### Notes on issue and solution: 
 
-
-
-
-
-
-
-
-
 ---
-
-# Date: 07/xx/26 
+# Date: xx/xx/xx 
 
 ## Goals for the Day
 
-
-
 ## Notes on day:
-```mermaid
-kanban
-  column1[I freakin love Markdown]
-    task1[this might be the coolest s*** ever]
-```
-## Situation
 
+## Situation
+ 
 ### Where:
 
 ### File: 
@@ -1303,178 +2610,4 @@ kanban
 
 ### Notes on issue and solution: 
 
-
-
-
-
-
-
-
-
 ---
-
-# Date: 07/xx/26 
-
-## Goals for the Day
-
-
-
-## Notes on day:
-```mermaid
-kanban
-  column1[I freakin love Markdown]
-    task1[this might be the coolest s*** ever]
-```
-## Situation
-
-### Where:
-
-### File: 
-
-### Action: 
-
-### Error produced:
-
-### Solution: 
-
-### Notes on issue and solution: 
-
-
-
----
-
-# Date: 07/xx/26 
-
-## Goals for the Day
-
-
-
-## Notes on day:
-```mermaid
-kanban
-  column1[I freakin love Markdown]
-    task1[this might be the coolest s*** ever]
-```
-## Situation
-
-### Where:
-
-### File: 
-
-### Action: 
-
-### Error produced:
-
-### Solution: 
-
-### Notes on issue and solution: 
-
-
-
-
----
-
-# Date: 07/xx/26 
-
-## Goals for the Day
-
-
-
-## Notes on day:
-```mermaid
-kanban
-  column1[I freakin love Markdown]
-    task1[this might be the coolest s*** ever]
-```
-## Situation
-
-### Where:
-
-### File: 
-
-### Action: 
-
-### Error produced:
-
-### Solution: 
-
-### Notes on issue and solution: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-This is some code about the pdb (python debugger) and need to do a pdb tutorial
-```
-{
-(.venv) [esmoss@fslpws0008 launch]$ ./launch.py 
-Simulation complete. Output written to log_lv.csv
-[koviz] Listening on 127.0.0.1:64053
-[koviz] KovizThread started, is_alive=True
-Loading data from /home/esmoss/virgo/examples/launch...
-Done.
-> /home/esmoss/virgo/Virgo.py(2386)initialize_nodes()
--> actors[a] = self.create_actor(actor_name=a, actor_scene_dict=self.scene['actors'][a])
-(Pdb) list
-2381 	        trails = {}
-2382 	
-2383 	        if 'actors' in self.scene and self.scene['actors'] != None:
-2384 	          for a in self.scene['actors']:
-2385 	            import pdb; pdb.set_trace()
-2386 ->	            actors[a] = self.create_actor(actor_name=a, actor_scene_dict=self.scene['actors'][a])
-2387 	            actors[a].initialize()
-2388 	
-2389 	            node, parent_name = self.create_node(actor=actors[a],
-2390 	                                                 actor_scene_dict=self.scene['actors'][a],
-2391 	                                                 _class=ancc)
-(Pdb) s
---Call--
-> /home/esmoss/virgo/Virgo.py(2157)create_actor()
--> def create_actor(self, actor_name, actor_scene_dict=None,):
-(Pdb) list
-2152 	        """
-2153 	        from VirgoDictVerifier import VirgoDictVerifier
-2154 	        vdv = VirgoDictVerifier(scene_dict=self.scene, yaml_file=self.scene_yaml_path)
-2155 	        self.scene = vdv.verify()
-2156 	
-2157 ->	    def create_actor(self, actor_name, actor_scene_dict=None,):
-2158 	        """
-2159 	        Given a single scene's actors: sub-entry, return a
-2160 	        VirgoActor instance built from that information
-2161 	
-2162 	        TODO all this checking for dict/YAML validity needs to be safer, i.e.
-(Pdb) pprint(actor_name)
-*** NameError: name 'pprint' is not defined
-(Pdb) print(actor_name)
-earth
-(Pdb) print(actor_scene_dict)
-{'scale': 1.0, 'opacity': 1.0, 'pos': [0.0, 0.0, 0.0], 'ypr': [0.0, 0.0, 0.0], 'color': None, 'pickable': False, 'parent': 'ecef_frame', 'backface_culling': True, 'provide_data': None, 'axes': None, 'trail': None, 'driven_by': None, 'labels': {}, 'mesh': 'VIRGO_PREFAB:wgs84-earth'}
-(Pdb) 
-}
-```
-
-```
-Documented commands (type help <topic>):
-========================================
-EOF    c          d        h         list      q        rv       undisplay
-a      cl         debug    help      ll        quit     s        unt      
-alias  clear      disable  ignore    longlist  r        source   until    
-args   commands   display  interact  n         restart  step     up       
-b      condition  down     j         next      return   tbreak   w        
-break  cont       enable   jump      p         retval   u        whatis   
-bt     continue   exit     l         pp        run      unalias  where    
-
-Miscellaneous help topics:
-==========================
-```
-
-Virgo.py:2157
