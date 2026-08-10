@@ -650,23 +650,34 @@ No child items are currently assigned. Use child items to break down work into s
 ### Git Path
 ```mermaid
 ---
+<<<<<<< HEAD
 title: My Git Path So Far
 config:
   logLevel: 'debug'
   theme: 'base'
   gitGraph:
     showBranches: True
+=======
+title: My Git Path For Prefab
+config:
+  theme: 'dark'
+>>>>>>> dc973e2005327ceaea14be2432ebbd2a87b16e19
 ---
 
     gitGraph
       commit id: "7d0acf..."
       commit id: "f0a70e..."
 
+<<<<<<< HEAD
       branch "ethan practice"
+=======
+      branch "Practice Branch"
+>>>>>>> dc973e2005327ceaea14be2432ebbd2a87b16e19
       
 
       checkout main
       
+<<<<<<< HEAD
       branch "32-support-rectangular-prism-prefab"
 
       commit id: "Akshita's Branch"
@@ -692,6 +703,43 @@ config:
       commit id: "more tests"
       commit id: "just making some tests"
       
+=======
+      branch "Akshita 32-support-rectangular-prism-prefab"
+
+      commit id: "Akshita's Branch" 
+
+      checkout "Practice Branch"
+      commit id: "finished with practice" type: HIGHLIGHT
+
+      checkout "Akshita 32-support-rectangular-prism-prefab"
+      commit id: "d370bc... merge request"
+
+      branch "Ethan 32-support-rectangular-prism-prefab"
+      commit id: "cc25452b478b0dd1ab8e87b90ff6c56dfc0a4747"
+      commit id: "cd84b487062f09e3e93acb5c5ebb8f2192e87003"
+      commit id: "88be8497a601904c77badec43aa95304a515e67b"
+      commit id: "7eedb20f5dfbddfd1bbb401dcf62dcceec465912"
+      commit id: "yet another babe lost to the wind" type: HIGHLIGHT
+
+      checkout main
+      merge  "Akshita 32-support-rectangular-prism-prefab"
+      commit 
+```
+---
+```mermaid
+---
+title: Enable/Disable trails
+config:
+  logLevel: 'debug'
+  theme: 'base'
+---
+    gitGraph:
+      checkout main
+      branch "39-add-enable-disable-trails"
+      commit id: "o7"
+      commit id: "07"
+      commit id: "just making some tests"
+>>>>>>> dc973e2005327ceaea14be2432ebbd2a87b16e19
 ```
 
 ---
@@ -1006,6 +1054,10 @@ It said that an *Attribute* is a variable that belongs to the object (like self.
 Ensure that the Gantt Chart at the bottom of the doc is updated daily.
 Needs to be finalized first though with work items and hopeful deadlines.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dc973e2005327ceaea14be2432ebbd2a87b16e19
 ---
 
 # Date: 07/07/26 
