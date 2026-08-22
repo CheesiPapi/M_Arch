@@ -1,15 +1,13 @@
 ---
-course: "ENGR / PHYS XXX - Course Name"
-instructor: "Dr. Name"
-date: "YYYY-MM-DD"
-lecture: "Lecture NN: Topic Title"
+course: "ENGR 2120 - Dynamics"
+instructor: "Dr. Longhurst"
+date: "2026-08-24"
 tags:
-  - physics
-  - mechanics
-  - differential-equations
+  - Engineering
+  - Dynamics
 ---
 
-# Lecture NN: [Topic Title]
+# Lecture 01: [Topic Title]
 
 > **Quick Navigation:** [Summary](#summary--bottom-panel) • [Active Recall Cues](#recall-cues--questions--left-panel) • [Detailed Notes](#lecture-notes--right-panel) • [Action Items](#action-items--next-steps)
 

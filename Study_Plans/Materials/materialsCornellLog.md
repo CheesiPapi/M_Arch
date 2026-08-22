@@ -1,15 +1,13 @@
 ---
-course: "ENGR / PHYS XXX - Course Name"
-instructor: "Dr. Name"
-date: "YYYY-MM-DD"
-lecture: "Lecture NN: Topic Title"
+course: "ENGR 3600 - Materials Science"
+instructor: "Dr. Kovalskiy"
+date: "2026-08-24"
 tags:
-  - physics
-  - mechanics
-  - differential-equations
+  - Materials
+  - Engineering
 ---
 
-# Lecture NN: [Topic Title]
+# Lecture 01: [Topic Title]
 
 > **Quick Navigation:** [Summary](#summary--bottom-panel) • [Active Recall Cues](#recall-cues--questions--left-panel) • [Detailed Notes](#lecture-notes--right-panel) • [Action Items](#action-items--next-steps)
 

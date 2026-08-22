@@ -1,15 +1,13 @@
 ---
-course: "ENGR / PHYS XXX - Course Name"
-instructor: "Dr. Name"
-date: "YYYY-MM-DD"
-lecture: "Lecture NN: Topic Title"
+course: "PHYS 3100/01 - Optics"
+instructor: "Dr. Donev"
+date: "2026-08-24"
 tags:
-  - physics
-  - mechanics
-  - differential-equations
+  - Physics
+  - Optics
 ---
 
-# Lecture NN: [Topic Title]
+# Lecture 01: [Topic Title]
 
 > **Quick Navigation:** [Summary](#summary--bottom-panel) • [Active Recall Cues](#recall-cues--questions--left-panel) • [Detailed Notes](#lecture-notes--right-panel) • [Action Items](#action-items--next-steps)
 
