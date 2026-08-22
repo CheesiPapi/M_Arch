@@ -1,4 +1,4 @@
-# Security Policy ::construction:: STILL UNDER CONSTRUCTION
+# Security Policy :construction: STILL UNDER CONSTRUCTION
 
 ## Supported Versions
 
