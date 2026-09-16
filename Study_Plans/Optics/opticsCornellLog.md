@@ -155,3 +155,39 @@ graph LR
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+
+Idkwtf is going on up there.       /^\
+I'll have to figure that out later. |
+
+### Diffraction of Light by a Circular Opening
+
+With a circular aperture
+
+\theta = (1.22 \lambda)/D
+
+where D is the diameter of the aperture.
+
+y_1 = L tan(\theta)
+2y_1 = 2L tan(\theta)
+
+to find the y_1 you can make it a right triangle where the opposite is y_1.
+L is adjacent.
+and \theta is the angle closest to the aperture.
+
+What is the biggest hole that I dont have to worry about diffraction.
+
+500nm = \lambda
+1m = L
+
+According to huygens' principle, each point on the wave front can be thought of as a spherical wavelet.
+
+We are talking about single-slit diffraction.
+The wavelets going straight forward all travel the same distance to the screen.
+Thus they arrive in phase and interfere constructively to produce the central maximum.
+Each point on the front wave (the wavelets were going horizontal, and now they turned upwards about 45 degrees) is paired with another point distance a/2 away.
+
+These wavelets all meet on the screen at angle \theta. Wavelet 2 travels distance \delta r_12 = (a/2)sin(\theta) further than wavelet 1.
+
+The picture shows that they made a right triangle with respect to the angle made from the hole.
+
