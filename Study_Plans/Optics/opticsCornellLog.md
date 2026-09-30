@@ -7,6 +7,9 @@ tags:
   - Optics
 ---
 
+ $n\lambda=dsin\theta$
+ $\lambda = frac($
+
 # Lecture 01: [Topic Title]
 
 > **Quick Navigation:** [Summary](#summary--bottom-panel) • [Active Recall Cues](#recall-cues--questions--left-panel) • [Detailed Notes](#lecture-notes--right-panel) • [Action Items](#action-items--next-steps)
@@ -54,8 +57,8 @@ Dividing through by $m$:
 $$\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$$
 
 Where:
-- $\gamma \equiv rac{c}{2m}$ (damping parameter)
-- $\omega_0 \equiv \sqrt{rac{k}{m}}$ (undamped natural frequency)
+- $\gamma \equiv \frac{c}{2m}$ (damping parameter)
+- $\omega_0 \equiv \sqrt{ \frac{k}{m}}$ (undamped natural frequency)
 
 ---
 
