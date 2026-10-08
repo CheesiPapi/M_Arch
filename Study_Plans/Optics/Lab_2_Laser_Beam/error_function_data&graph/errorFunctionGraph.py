@@ -17,14 +17,14 @@ from scipy.signal import savgol_filter
 # =============================================================================
 
 # --- Data --------------------------------------------------------------------
-EXCEL_FILE = "lightMeasurementRazorCloseToSensor.xlsx"  # relative to this script, or a full path
+EXCEL_FILE = "nearLaserCutData.xlsx"  # relative to this script, or a full path
 SHEET = 0                              # sheet index or name
 X_COLUMN = "Distance"                  # exact header text in your Excel file
-Y_COLUMN = "Light Intensity Close"     # exact header text in your Excel file
+Y_COLUMN = "Light Intensity"           # exact header text in your Excel file
 
 # --- Smoothing (applied before taking the derivative) ------------------------
 SMOOTH = True
-SMOOTH_WINDOW = 21                     # must be odd; bigger = smoother
+SMOOTH_WINDOW = 51                     # must be odd; bigger = smoother
 SMOOTH_POLYORDER = 3
 
 # --- Labels ------------------------------------------------------------------
@@ -53,7 +53,7 @@ FIG_SIZE = (10, 6)
 TITLE_SIZE = 15
 LABEL_SIZE = 12
 TICK_SIZE = 10
-LEGEND_LOC = "upper left"
+LEGEND_LOC = "center left"
 SHOW_GRID = True
 GRID_ALPHA = 0.35
 STYLE = "seaborn-v0_8-whitegrid"       # any matplotlib style, or None
@@ -98,7 +98,7 @@ if SMOOTH:
 else:
     y_plot = y
 
-derivative = np.gradient(y_plot, x)
+derivative = np.gradient(y_plot, x) * -1
 
 # =============================================================================
 # Plot
@@ -156,3 +156,6 @@ if SAVE_FIGURE:
 
 if SHOW_PLOT:
     plt.show()
+
+print(x, y)
+print(derivative)
