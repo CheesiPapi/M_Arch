@@ -24,7 +24,7 @@ Y_COLUMN = "Light Intensity"           # exact header text in your Excel file
 
 # --- Smoothing (applied before taking the derivative) ------------------------
 SMOOTH = True
-SMOOTH_WINDOW = 51                     # must be odd; bigger = smoother
+SMOOTH_WINDOW = 21                     # must be odd; bigger = smoother
 SMOOTH_POLYORDER = 3
 
 # --- Labels ------------------------------------------------------------------
