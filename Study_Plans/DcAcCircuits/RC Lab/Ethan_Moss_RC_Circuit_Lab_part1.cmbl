@@ -1,0 +1,2863 @@
+﻿<Document>
+  <FileCoherence>1</FileCoherence>
+  <Version>3.16.2</Version>
+  <charset>utf-8</charset>
+  <ApplicationBuildDateTime>Mar  8 2021 07:58:58</ApplicationBuildDateTime>
+  <FileName>Ethan_Moss_RC_Circuit_Lab_part1.cmbl</FileName>
+  <FileIDString>04/07/03 14:33:39Your name here1573321489</FileIDString>
+  <CreatorOS>2</CreatorOS>
+  <CreatorApp>1</CreatorApp>
+  <AbsoluteVersion>1</AbsoluteVersion>
+  <Radians>1</Radians>
+  <NumDerivativePoints>5</NumDerivativePoints>
+  <NumSmoothingPoints>5</NumSmoothingPoints>
+  <ShowZeroOnToolbar>0</ShowZeroOnToolbar>
+  <ShowDataMarkOnToolbar>0</ShowDataMarkOnToolbar>
+  <ShowGraphMatchOnToolbar>0</ShowGraphMatchOnToolbar>
+  <GraphMatchUseConstant>1</GraphMatchUseConstant>
+  <GraphMatchUseLinear>1</GraphMatchUseLinear>
+  <GraphMatchUseQuadratic>1</GraphMatchUseQuadratic>
+  <GraphMatchNumSections>0</GraphMatchNumSections>
+  <Stationery>0</Stationery>
+  <CreationDateTime>04/07/03 14:33:39</CreationDateTime>
+  <ModifiedDateTime>10/6/2026 11:17:27</ModifiedDateTime>
+  <PageBounds>0 0 15.9666666667 7.525</PageBounds>
+  <ScreenResolution>0 0 1919 1079</ScreenResolution>
+  <MathType>0</MathType>
+  <AllowOptionsDialogs>1</AllowOptionsDialogs>
+  <AllowAutoCurveFit>1</AllowAutoCurveFit>
+  <ReplayWindowPosition>0 575 163 894 352 1</ReplayWindowPosition>
+  <ReplayWindowSpeed>1</ReplayWindowSpeed>
+  <ReplayWindowRepeat>0</ReplayWindowRepeat>
+  <SensorConflictEnabled>1</SensorConflictEnabled>
+  <MathConstantValue>3.141592653590</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>0</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>pi</MathConstantName>
+  <Page>
+    <ID>101 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <PageTitle>Graph</PageTitle>
+    <PageColor>0x6363 0x6363 0x6363| 0xffff 0xffffffff</PageColor>
+    <PageDisplayPageInfo>0 </PageDisplayPageInfo>
+    <PagePageInfo></PagePageInfo>
+    <PageGraphPaper>0 </PageGraphPaper>
+    <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
+    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0xffffffff</PageGraphPaperLineColor>
+    <PageReplayWindowPosition>0 575 163 894 352</PageReplayWindowPosition>
+    <PageGraphCartesian>
+      <ID>105 </ID>
+      <BroadcastTo>2 4192 4201 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.0450823529412 0.0336521906346 15.9215843137 7.49134780936 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle>Capacitors</GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x0</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>110 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>3 110 4193 110 4202 110 111 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphShowUncertaintyBoxes>0</GraphShowUncertaintyBoxes>
+      <GraphConnectLines>1</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>0</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x0</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x0</GraphMinorTickColor>
+      <GraphPlotXAutoscale>2</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>2</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>20</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>-1</GraphPlotYMin>
+      <GraphPlotYMax>2.25</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>20</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>-1</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>2.25</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <AudioTraceIDs>3 4193 4202 111 </AudioTraceIDs>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+    <PageHelperDataCurveFit>
+      <ID>4192 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>11.1367490196 2.79198552397 12.9583147423 4.06957927397 </Bounds>
+      <SubordinateToID>105</SubordinateToID>
+      <SubordinateOffset>11.0916666667 2.75833333333</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 9 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GUIHelperRangeMin>12.6000309588</GUIHelperRangeMin>
+      <GUIHelperRangeMax>16.6110855218</GUIHelperRangeMax>
+      <GUIHelperTraceColumnID>111</GUIHelperTraceColumnID>
+      <GUIHelperBaseColumnID>110</GUIHelperBaseColumnID>
+      <GUIHelperPrecision>4</GUIHelperPrecision>
+      <GUIHelperPrecisionDecimal>0</GUIHelperPrecisionDecimal>
+      <GUIHelperMinimized>0</GUIHelperMinimized>
+      <GUIHelperUseEntireRange>0</GUIHelperUseEntireRange>
+      <GUIHelperUnderlyingHistogramFFTColumnID>0</GUIHelperUnderlyingHistogramFFTColumnID>
+      <CurveFitFunctionID>4193</CurveFitFunctionID>
+      <CurveFitColumnID>0</CurveFitColumnID>
+      <CurveFitError>0.00283679621696</CurveFitError>
+      <CurveFitMethod>1</CurveFitMethod>
+      <CurveFitUncertainty>1</CurveFitUncertainty>
+      <ManualCurveFitIncrements>3 0.1 0.1 0.1 </ManualCurveFitIncrements>
+      <ManualCurveFitShowRMSE>1</ManualCurveFitShowRMSE>
+      <ManualCurveFitWeightColumnId>4294967295</ManualCurveFitWeightColumnId>
+      <CurveFitCorrelation>0.999963936297</CurveFitCorrelation>
+    </PageHelperDataCurveFit>
+    <PageHelperDataCurveFit>
+      <ID>4201 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>5.02841568627 2.00865219063 6.78202486596 3.28624594063 </Bounds>
+      <SubordinateToID>105</SubordinateToID>
+      <SubordinateOffset>4.98333333333 1.975</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 9 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GUIHelperRangeMin>2.65865742919</GUIHelperRangeMin>
+      <GUIHelperRangeMax>7.72219251292</GUIHelperRangeMax>
+      <GUIHelperTraceColumnID>111</GUIHelperTraceColumnID>
+      <GUIHelperBaseColumnID>110</GUIHelperBaseColumnID>
+      <GUIHelperPrecision>4</GUIHelperPrecision>
+      <GUIHelperPrecisionDecimal>0</GUIHelperPrecisionDecimal>
+      <GUIHelperMinimized>0</GUIHelperMinimized>
+      <GUIHelperUseEntireRange>0</GUIHelperUseEntireRange>
+      <GUIHelperUnderlyingHistogramFFTColumnID>0</GUIHelperUnderlyingHistogramFFTColumnID>
+      <CurveFitFunctionID>4202</CurveFitFunctionID>
+      <CurveFitColumnID>0</CurveFitColumnID>
+      <CurveFitError>0.00297872576598</CurveFitError>
+      <CurveFitMethod>1</CurveFitMethod>
+      <CurveFitUncertainty>1</CurveFitUncertainty>
+      <ManualCurveFitIncrements>3 0.1 0.1 0.1 </ManualCurveFitIncrements>
+      <ManualCurveFitShowRMSE>1</ManualCurveFitShowRMSE>
+      <ManualCurveFitWeightColumnId>4294967295</ManualCurveFitWeightColumnId>
+      <CurveFitCorrelation>0.999971845514</CurveFitCorrelation>
+    </PageHelperDataCurveFit>
+  </Page>
+  <Page>
+    <ID>112 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>0</Visible>
+    <PageTitle>Data Table</PageTitle>
+    <PageColor>0x6363 0x6363 0x6363| 0xffff 0xffffffff</PageColor>
+    <PageDisplayPageInfo>0 </PageDisplayPageInfo>
+    <PagePageInfo></PagePageInfo>
+    <PageGraphPaper>0 </PageGraphPaper>
+    <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
+    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0xffffffff</PageGraphPaperLineColor>
+    <PageReplayWindowPosition>0 575 163 839 303</PageReplayWindowPosition>
+    <PageTable>
+      <ID>113 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.106444394353 0.0444021585848 4.92775664314 7.48994563475 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>1</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 2 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <TableColumn> 110 1.20219607843 </TableColumn>
+      <TableColumn> 111 1.20219607843 </TableColumn>
+      <TableColumn> 3312 1.20219607843 </TableColumn>
+      <StartIndex> 1 </StartIndex>
+      <DisplayBlackAndWhite> 0 </DisplayBlackAndWhite>
+    </PageTable>
+    <PageGraphCartesian>
+      <ID>4106 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>6.07046405228 0.545154798761 15.0869346405 5.01821981424 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>2.73958333333 -0.8125</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle></GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>110 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>1 110 3312 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphShowUncertaintyBoxes>0</GraphShowUncertaintyBoxes>
+      <GraphConnectLines>1</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>0</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMinorTickColor>
+      <GraphPlotXAutoscale>2</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>10</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>-5</GraphPlotYMin>
+      <GraphPlotYMax>10</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>10</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>-5</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>10</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <AudioTraceIDs>1 3312 </AudioTraceIDs>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+  </Page>
+  <CurrentPageIndex>0</CurrentPageIndex>
+  <DataSet>
+    <ID>109 </ID>
+    <BroadcastTo>4 4 9 113 3313 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>Latest</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetPosition>4</DataSetPosition>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>1</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>1</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <Metadata>
+      <DataMark>
+      </DataMark>
+      <DataTag>
+      </DataTag>
+    </Metadata>
+    <DataColumn>
+      <ID>110 </ID>
+      <BroadcastTo>4 17 105 113 4106 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Time</DataObjectName>
+      <DataObjectShortName>t</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>107</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>2</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>s</ColumnUnits>
+      <ColumnCollectionTimeUnit>1</ColumnCollectionTimeUnit>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1791302396</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>0</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>1</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Time</ColumnMatchTag>
+      <ColumnStartCollectTime>1791302396</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1.1e-99</ColumnStart>
+      <ColumnEnd>1.1e-99</ColumnEnd>
+      <ColumnIncrement>1.1e-99</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>12</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>4167</ColumnGroupID>
+      <ColumnCells>
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+0.12
+0.14
+0.16
+0.18
+0.2
+0.22
+0.24
+0.26
+0.28
+0.3
+0.32
+0.34
+0.36
+0.38
+0.4
+0.42
+0.44
+0.46
+0.48
+0.5
+0.52
+0.54
+0.56
+0.58
+0.6
+0.62
+0.64
+0.66
+0.68
+0.7
+0.72
+0.74
+0.76
+0.78
+0.8
+0.82
+0.84
+0.86
+0.88
+0.9
+0.92
+0.94
+0.96
+0.98
+1
+1.02
+1.04
+1.06
+1.08
+1.1
+1.12
+1.14
+1.16
+1.18
+1.2
+1.22
+1.24
+1.26
+1.28
+1.3
+1.32
+1.34
+1.36
+1.38
+1.4
+1.42
+1.44
+1.46
+1.48
+1.5
+1.52
+1.54
+1.56
+1.58
+1.6
+1.62
+1.64
+1.66
+1.68
+1.7
+1.72
+1.74
+1.76
+1.78
+1.8
+1.82
+1.84
+1.86
+1.88
+1.9
+1.92
+1.94
+1.96
+1.98
+2
+2.02
+2.04
+2.06
+2.08
+2.1
+2.12
+2.14
+2.16
+2.18
+2.2
+2.22
+2.24
+2.26
+2.28
+2.3
+2.32
+2.34
+2.36
+2.38
+2.4
+2.42
+2.44
+2.46
+2.48
+2.5
+2.52
+2.54
+2.56
+2.58
+2.6
+2.62
+2.64
+2.66
+2.68
+2.7
+2.72
+2.74
+2.76
+2.78
+2.8
+2.82
+2.84
+2.86
+2.88
+2.9
+2.92
+2.94
+2.96
+2.98
+3
+3.02
+3.04
+3.06
+3.08
+3.1
+3.12
+3.14
+3.16
+3.18
+3.2
+3.22
+3.24
+3.26
+3.28
+3.3
+3.32
+3.34
+3.36
+3.38
+3.4
+3.42
+3.44
+3.46
+3.48
+3.5
+3.52
+3.54
+3.56
+3.58
+3.6
+3.62
+3.64
+3.66
+3.68
+3.7
+3.72
+3.74
+3.76
+3.78
+3.8
+3.82
+3.84
+3.86
+3.88
+3.9
+3.92
+3.94
+3.96
+3.98
+4
+4.02
+4.04
+4.06
+4.08
+4.1
+4.12
+4.14
+4.16
+4.18
+4.2
+4.22
+4.24
+4.26
+4.28
+4.3
+4.32
+4.34
+4.36
+4.38
+4.4
+4.42
+4.44
+4.46
+4.48
+4.5
+4.52
+4.54
+4.56
+4.58
+4.6
+4.62
+4.64
+4.66
+4.68
+4.7
+4.72
+4.74
+4.76
+4.78
+4.8
+4.82
+4.84
+4.86
+4.88
+4.9
+4.92
+4.94
+4.96
+4.98
+5
+5.02
+5.04
+5.06
+5.08
+5.1
+5.12
+5.14
+5.16
+5.18
+5.2
+5.22
+5.24
+5.26
+5.28
+5.3
+5.32
+5.34
+5.36
+5.38
+5.4
+5.42
+5.44
+5.46
+5.48
+5.5
+5.52
+5.54
+5.56
+5.58
+5.6
+5.62
+5.64
+5.66
+5.68
+5.7
+5.72
+5.74
+5.76
+5.78
+5.8
+5.82
+5.84
+5.86
+5.88
+5.9
+5.92
+5.94
+5.96
+5.98
+6
+6.02
+6.04
+6.06
+6.08
+6.1
+6.12
+6.14
+6.16
+6.18
+6.2
+6.22
+6.24
+6.26
+6.28
+6.3
+6.32
+6.34
+6.36
+6.38
+6.4
+6.42
+6.44
+6.46
+6.48
+6.5
+6.52
+6.54
+6.56
+6.58
+6.6
+6.62
+6.64
+6.66
+6.68
+6.7
+6.72
+6.74
+6.76
+6.78
+6.8
+6.82
+6.84
+6.86
+6.88
+6.9
+6.92
+6.94
+6.96
+6.98
+7
+7.02
+7.04
+7.06
+7.08
+7.1
+7.12
+7.14
+7.16
+7.18
+7.2
+7.22
+7.24
+7.26
+7.28
+7.3
+7.32
+7.34
+7.36
+7.38
+7.4
+7.42
+7.44
+7.46
+7.48
+7.5
+7.52
+7.54
+7.56
+7.58
+7.6
+7.62
+7.64
+7.66
+7.68
+7.7
+7.72
+7.74
+7.76
+7.78
+7.8
+7.82
+7.84
+7.86
+7.88
+7.9
+7.92
+7.94
+7.96
+7.98
+8
+8.02
+8.04
+8.06
+8.08
+8.1
+8.12
+8.14
+8.16
+8.18
+8.2
+8.22
+8.24
+8.26
+8.28
+8.3
+8.32
+8.34
+8.36
+8.38
+8.4
+8.42
+8.44
+8.46
+8.48
+8.5
+8.52
+8.54
+8.56
+8.58
+8.6
+8.62
+8.64
+8.66
+8.68
+8.7
+8.72
+8.74
+8.76
+8.78
+8.8
+8.82
+8.84
+8.86
+8.88
+8.9
+8.92
+8.94
+8.96
+8.98
+9
+9.02
+9.04
+9.06
+9.08
+9.1
+9.12
+9.14
+9.16
+9.18
+9.2
+9.22
+9.24
+9.26
+9.28
+9.3
+9.32
+9.34
+9.36
+9.38
+9.4
+9.42
+9.44
+9.46
+9.48
+9.5
+9.52
+9.54
+9.56
+9.58
+9.6
+9.62
+9.64
+9.66
+9.68
+9.7
+9.72
+9.74
+9.76
+9.78
+9.8
+9.82
+9.84
+9.86
+9.88
+9.9
+9.92
+9.94
+9.96
+9.98
+10
+10.02
+10.04
+10.06
+10.08
+10.1
+10.12
+10.14
+10.16
+10.18
+10.2
+10.22
+10.24
+10.26
+10.28
+10.3
+10.32
+10.34
+10.36
+10.38
+10.4
+10.42
+10.44
+10.46
+10.48
+10.5
+10.52
+10.54
+10.56
+10.58
+10.6
+10.62
+10.64
+10.66
+10.68
+10.7
+10.72
+10.74
+10.76
+10.78
+10.8
+10.82
+10.84
+10.86
+10.88
+10.9
+10.92
+10.94
+10.96
+10.98
+11
+11.02
+11.04
+11.06
+11.08
+11.1
+11.12
+11.14
+11.16
+11.18
+11.2
+11.22
+11.24
+11.26
+11.28
+11.3
+11.32
+11.34
+11.36
+11.38
+11.4
+11.42
+11.44
+11.46
+11.48
+11.5
+11.52
+11.54
+11.56
+11.58
+11.6
+11.62
+11.64
+11.66
+11.68
+11.7
+11.72
+11.74
+11.76
+11.78
+11.8
+11.82
+11.84
+11.86
+11.88
+11.9
+11.92
+11.94
+11.96
+11.98
+12
+12.02
+12.04
+12.06
+12.08
+12.1
+12.12
+12.14
+12.16
+12.18
+12.2
+12.22
+12.24
+12.26
+12.28
+12.3
+12.32
+12.34
+12.36
+12.38
+12.4
+12.42
+12.44
+12.46
+12.48
+12.5
+12.52
+12.54
+12.56
+12.58
+12.6
+12.62
+12.64
+12.66
+12.68
+12.7
+12.72
+12.74
+12.76
+12.78
+12.8
+12.82
+12.84
+12.86
+12.88
+12.9
+12.92
+12.94
+12.96
+12.98
+13
+13.02
+13.04
+13.06
+13.08
+13.1
+13.12
+13.14
+13.16
+13.18
+13.2
+13.22
+13.24
+13.26
+13.28
+13.3
+13.32
+13.34
+13.36
+13.38
+13.4
+13.42
+13.44
+13.46
+13.48
+13.5
+13.52
+13.54
+13.56
+13.58
+13.6
+13.62
+13.64
+13.66
+13.68
+13.7
+13.72
+13.74
+13.76
+13.78
+13.8
+13.82
+13.84
+13.86
+13.88
+13.9
+13.92
+13.94
+13.96
+13.98
+14
+14.02
+14.04
+14.06
+14.08
+14.1
+14.12
+14.14
+14.16
+14.18
+14.2
+14.22
+14.24
+14.26
+14.28
+14.3
+14.32
+14.34
+14.36
+14.38
+14.4
+14.42
+14.44
+14.46
+14.48
+14.5
+14.52
+14.54
+14.56
+14.58
+14.6
+14.62
+14.64
+14.66
+14.68
+14.7
+14.72
+14.74
+14.76
+14.78
+14.8
+14.82
+14.84
+14.86
+14.88
+14.9
+14.92
+14.94
+14.96
+14.98
+15
+15.02
+15.04
+15.06
+15.08
+15.1
+15.12
+15.14
+15.16
+15.18
+15.2
+15.22
+15.24
+15.26
+15.28
+15.3
+15.32
+15.34
+15.36
+15.38
+15.4
+15.42
+15.44
+15.46
+15.48
+15.5
+15.52
+15.54
+15.56
+15.58
+15.6
+15.62
+15.64
+15.66
+15.68
+15.7
+15.72
+15.74
+15.76
+15.78
+15.8
+15.82
+15.84
+15.86
+15.88
+15.9
+15.92
+15.94
+15.96
+15.98
+16
+16.02
+16.04
+16.06
+16.08
+16.1
+16.12
+16.14
+16.16
+16.18
+16.2
+16.22
+16.24
+16.26
+16.28
+16.3
+16.32
+16.34
+16.36
+16.38
+16.4
+16.42
+16.44
+16.46
+16.48
+16.5
+16.52
+16.54
+16.56
+16.58
+16.6
+16.62
+16.64
+16.66
+16.68
+16.7
+16.72
+16.74
+16.76
+16.78
+16.8
+16.82
+16.84
+16.86
+16.88
+16.9
+16.92
+16.94
+16.96
+16.98
+17
+17.02
+17.04
+17.06
+17.08
+17.1
+17.12
+17.14
+17.16
+17.18
+17.2
+17.22
+17.24
+17.26
+17.28
+17.3
+17.32
+17.34
+17.36
+17.38
+17.4
+17.42
+17.44
+17.46
+17.48
+17.5
+17.52
+17.54
+17.56
+17.58
+17.6
+17.62
+17.64
+17.66
+17.68
+17.7
+17.72
+17.74
+17.76
+17.78
+17.8
+17.82
+17.84
+17.86
+17.88
+17.9
+17.92
+17.94
+17.96
+17.98
+18
+18.02
+18.04
+18.06
+18.08
+18.1
+18.12
+18.14
+18.16
+18.18
+18.2
+18.22
+18.24
+18.26
+18.28
+18.3
+18.32
+18.34
+18.36
+18.38
+18.4
+18.42
+18.44
+18.46
+18.48
+18.5
+18.52
+18.54
+18.56
+18.58
+18.6
+18.62
+18.64
+18.66
+18.68
+18.7
+18.72
+18.74
+18.76
+18.78
+18.8
+18.82
+18.84
+18.86
+18.88
+18.9
+18.92
+18.94
+18.96
+18.98
+19
+19.02
+19.04
+19.06
+19.08
+19.1
+19.12
+19.14
+19.16
+19.18
+19.2
+19.22
+19.24
+19.26
+19.28
+19.3
+19.32
+19.34
+19.36
+19.38
+19.4
+19.42
+19.44
+19.46
+19.48
+19.5
+19.52
+19.54
+19.56
+19.58
+19.6
+19.62
+19.64
+19.66
+19.68
+19.7
+19.72
+19.74
+19.76
+19.78
+19.8
+19.82
+19.84
+19.86
+19.88
+19.9
+19.92
+19.94
+19.96
+19.98
+20
+20.02
+20.04
+20.06
+20.08
+20.1
+20.12
+20.14
+20.16
+20.18
+20.2
+20.22
+20.24
+20.26
+20.28
+20.3
+20.32
+20.34
+20.36
+20.38
+20.4
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>111 </ID>
+      <BroadcastTo>6 4 17 105 113 3313 4106 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Potential</DataObjectName>
+      <DataObjectShortName>Pot</DataObjectShortName>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>4176</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>3</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>V</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1190326481</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>1</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>1</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Potential</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1.1e-99</ColumnStart>
+      <ColumnEnd>1.1e-99</ColumnEnd>
+      <ColumnIncrement>1.1e-99</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>12</ColumnNumber>
+      <ColumnShowLiveReadout>1</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>4169</ColumnGroupID>
+      <ColumnCells>
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.56548647111
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.56548647111
+1.56548647111
+1.57037047599
+1.57037047599
+1.56548647111
+1.57525448087
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.56548647111
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.56548647111
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.57037047599
+1.57525448087
+1.57525448087
+1.57037047599
+1.57525448087
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.56548647111
+1.56548647111
+1.57037047599
+1.55083445645
+1.52153042715
+1.49711040273
+1.47269037831
+1.44338634901
+1.4140823197
+1.38966229528
+1.36035826598
+1.33593824156
+1.30663421225
+1.28709819272
+1.25779416341
+1.23337413899
+1.20895411457
+1.18453409015
+1.16499807062
+1.14546205108
+1.12104202666
+1.10639001201
+1.08196998759
+1.06243396805
+1.04289794852
+1.02824593387
+1.00382590945
+0.98428988991
+0.964753870374
+0.950101855722
+0.930565836186
+0.91102981665
+0.901261806882
+0.881725787346
+0.867073772694
+0.847537753158
+0.832885738505
+0.818233723853
+0.803581709201
+0.784045689665
+0.769393675013
+0.759625665245
+0.740089645709
+0.730321635941
+0.715669621289
+0.701017606637
+0.686365591985
+0.676597582217
+0.661945567565
+0.652177557797
+0.637525543145
+0.627757533377
+0.617989523609
+0.603337508957
+0.593569499189
+0.583801489421
+0.574033479653
+0.564265469885
+0.554497460117
+0.544729450349
+0.534961440581
+0.525193430813
+0.515425421045
+0.500773406393
+0.491005396625
+0.486121391741
+0.476353381973
+0.466585372205
+0.456817362437
+0.447049352669
+0.442165347785
+0.437281342901
+0.427513333133
+0.417745323365
+0.407977313597
+0.403093308713
+0.398209303829
+0.393325298945
+0.383557289177
+0.373789279409
+0.364021269641
+0.359137264757
+0.354253259873
+0.344485250105
+0.344485250105
+0.339601245221
+0.329833235453
+0.320065225685
+0.315181220801
+0.315181220801
+0.305413211033
+0.300529206149
+0.295645201265
+0.285877191497
+0.280993186613
+0.276109181729
+0.271225176845
+0.271225176845
+0.266341171961
+0.261457167077
+0.256573162193
+0.251689157309
+0.241921147541
+0.241921147541
+0.232153137773
+0.232153137773
+0.227269132889
+0.222385128005
+0.217501123121
+0.212617118237
+0.212617118237
+0.207733113353
+0.202849108469
+0.202849108469
+0.197965103585
+0.193081098701
+0.188197093817
+0.183313088933
+0.183313088933
+0.178429084049
+0.168661074281
+0.168661074281
+0.168661074281
+0.163777069397
+0.163777069397
+0.158893064513
+0.154009059629
+0.154009059629
+0.154009059629
+0.149125054745
+0.144241049861
+0.139357044977
+0.139357044977
+0.139357044977
+0.134473040093
+0.134473040093
+0.129589035209
+0.124705030325
+0.129589035209
+0.124705030325
+0.124705030325
+0.119821025441
+0.119821025441
+0.114937020557
+0.114937020557
+0.110053015673
+0.105169010789
+0.110053015673
+0.105169010789
+0.105169010789
+0.100285005905
+0.100285005905
+0.100285005905
+0.0954010010208
+0.0954010010208
+0.0954010010208
+0.0905169961368
+0.0856329912527
+0.0856329912527
+0.0856329912527
+0.0856329912527
+0.0807489863687
+0.0807489863687
+0.0856329912527
+0.0807489863687
+0.0758649814847
+0.0758649814847
+0.0758649814847
+0.0758649814847
+0.0709809766007
+0.0709809766007
+0.0660969717167
+0.0660969717167
+0.0660969717167
+0.0660969717167
+0.0612129668327
+0.0660969717167
+0.0612129668327
+0.0612129668327
+0.0612129668327
+0.0563289619487
+0.0563289619487
+0.0563289619487
+0.0514449570647
+0.0514449570647
+0.0514449570647
+0.0465609521807
+0.0514449570647
+0.0465609521807
+0.0514449570647
+0.0465609521807
+0.0514449570647
+0.0465609521807
+0.0465609521807
+0.0465609521807
+0.0416769472967
+0.0416769472967
+0.0416769472967
+0.0416769472967
+0.0367929424127
+0.0416769472967
+0.0367929424127
+0.0367929424127
+0.0416769472967
+0.0367929424127
+0.0416769472967
+0.0367929424127
+0.0319089375287
+0.0319089375287
+0.0367929424127
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0319089375287
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0270249326447
+0.0172569228767
+0.0270249326447
+0.0221409277607
+0.0172569228767
+0.0172569228767
+0.0172569228767
+0.0172569228767
+0.0172569228767
+0.0172569228767
+0.0221409277607
+0.0172569228767
+0.0172569228767
+0.0172569228767
+0.0123729179927
+0.0172569228767
+0.0123729179927
+0.0123729179927
+0.0123729179927
+0.0172569228767
+0.00748891310867
+0.0123729179927
+0.0172569228767
+0.0172569228767
+0.0123729179927
+0.0172569228767
+0.0123729179927
+0.0123729179927
+0.0172569228767
+0.00748891310867
+0.0123729179927
+0.00748891310867
+0.0123729179927
+0.0123729179927
+0.00748891310867
+0.0123729179927
+0.0123729179927
+0.0123729179927
+0.0123729179927
+0.0123729179927
+0.00748891310867
+0.0123729179927
+0.00748891310867
+0.00748891310867
+0.00748891310867
+0.00748891310867
+0.00748891310867
+0.00748891310867
+0.0123729179927
+0.0123729179927
+0.00748891310867
+0.00748891310867
+0.00748891310867
+0.00748891310867
+0.0123729179927
+0.00748891310867
+0.0123729179927
+0.00748891310867
+0.00748891310867
+0.00748891310867
+0.00260490822466
+0.00260490822466
+0.00748891310867
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+0.00748891310867
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00748891310867
+0.00748891310867
+0.00748891310867
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+-0.00716310154335
+-0.00716310154335
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+-0.00716310154335
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00716310154335
+-0.00227909665934
+-0.00227909665934
+-0.00716310154335
+-0.00227909665934
+-0.00716310154335
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00716310154335
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00716310154335
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00716310154335
+-0.00227909665934
+-0.00716310154335
+-0.00227909665934
+-0.00227909665934
+-0.00716310154335
+0.00260490822466
+0.00260490822466
+-0.00227909665934
+0.00260490822466
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00716310154335
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00227909665934
+-0.00716310154335
+-0.00716310154335
+-0.00227909665934
+0.00260490822466
+0.00260490822466
+0.0221409277607
+0.0270249326447
+0.0367929424127
+0.0660969717167
+0.0954010010208
+0.119821025441
+0.149125054745
+0.173545079165
+0.197965103585
+0.227269132889
+0.251689157309
+0.280993186613
+0.305413211033
+0.329833235453
+0.349369254989
+0.373789279409
+0.398209303829
+0.417745323365
+0.437281342901
+0.456817362437
+0.476353381973
+0.500773406393
+0.520309425929
+0.539845445465
+0.559381465001
+0.574033479653
+0.593569499189
+0.613105518725
+0.632641538261
+0.647293552913
+0.666829572449
+0.681481587101
+0.696133601753
+0.705901611521
+0.725437631057
+0.740089645709
+0.764509670129
+0.774277679897
+0.793813699433
+0.803581709201
+0.818233723853
+0.828001733621
+0.847537753158
+0.857305762926
+0.867073772694
+0.881725787346
+0.896377801998
+0.906145811766
+0.920797826418
+0.93544984107
+0.945217850838
+0.95986986549
+0.964753870374
+0.979405885026
+0.989173894794
+0.998941904562
+1.00870991433
+1.02336192898
+1.02824593387
+1.03801394363
+1.0477819534
+1.05754996317
+1.06731797294
+1.08196998759
+1.08685399247
+1.09662200224
+1.10150600713
+1.11127401689
+1.12104202666
+1.13081003643
+1.13569404131
+1.14546205108
+1.15523006085
+1.16011406573
+1.1698820755
+1.17965008527
+1.17965008527
+1.18941809504
+1.19430209992
+1.20407010969
+1.20895411457
+1.21872212434
+1.22360612923
+1.22360612923
+1.22849013411
+1.23825814388
+1.24314214876
+1.24802615365
+1.25779416341
+1.2626781683
+1.26756217318
+1.27733018295
+1.27733018295
+1.2919821976
+1.28709819272
+1.29686620249
+1.30175020737
+1.30663421225
+1.31151821714
+1.31640222202
+1.32128622691
+1.32617023179
+1.33105423667
+1.33593824156
+1.34082224644
+1.34570625133
+1.35059025621
+1.35547426109
+1.36035826598
+1.35547426109
+1.36035826598
+1.36524227086
+1.37012627575
+1.37501028063
+1.37989428551
+1.37989428551
+1.3847782904
+1.38966229528
+1.39454630017
+1.39454630017
+1.39943030505
+1.40431430993
+1.40431430993
+1.40431430993
+1.40919831482
+1.4140823197
+1.4140823197
+1.41896632459
+1.42385032947
+1.42385032947
+1.42385032947
+1.42873433435
+1.43361833924
+1.43361833924
+1.43361833924
+1.43361833924
+1.43850234412
+1.43850234412
+1.44338634901
+1.44338634901
+1.44827035389
+1.45315435877
+1.44827035389
+1.45315435877
+1.45803836366
+1.45803836366
+1.45803836366
+1.45803836366
+1.46292236854
+1.46292236854
+1.46292236854
+1.46292236854
+1.46780637343
+1.47269037831
+1.47269037831
+1.47757438319
+1.47757438319
+1.47757438319
+1.47757438319
+1.48245838808
+1.48734239296
+1.48734239296
+1.48245838808
+1.48734239296
+1.48734239296
+1.48734239296
+1.48734239296
+1.49222639785
+1.49222639785
+1.49222639785
+1.49711040273
+1.49711040273
+1.50199440761
+1.50199440761
+1.50199440761
+1.50199440761
+1.50199440761
+1.50199440761
+1.5068784125
+1.5068784125
+1.51176241738
+1.51176241738
+1.51176241738
+1.51664642227
+1.51664642227
+1.51176241738
+1.51664642227
+1.51664642227
+1.51664642227
+1.51664642227
+1.52153042715
+1.52153042715
+1.52153042715
+1.52641443203
+1.52641443203
+1.52641443203
+1.52153042715
+1.52641443203
+1.52641443203
+1.53129843692
+1.53129843692
+1.52641443203
+1.52641443203
+1.52641443203
+1.53129843692
+1.53129843692
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.5361824418
+1.54595045157
+1.54106644669
+1.54106644669
+1.54595045157
+1.54106644669
+1.54595045157
+1.54106644669
+1.54595045157
+1.54106644669
+1.54106644669
+1.54106644669
+1.54106644669
+1.54106644669
+1.54595045157
+1.54595045157
+1.54595045157
+1.54595045157
+1.54595045157
+1.55083445645
+1.55083445645
+1.54595045157
+1.54595045157
+1.54595045157
+1.55083445645
+1.54595045157
+1.54595045157
+1.55083445645
+1.55083445645
+1.55083445645
+1.54595045157
+1.55083445645
+1.54595045157
+1.55083445645
+1.54595045157
+1.55083445645
+1.55083445645
+1.55083445645
+1.54595045157
+1.55083445645
+1.55083445645
+1.55083445645
+1.54595045157
+1.55083445645
+1.55571846134
+1.55571846134
+1.55083445645
+1.55083445645
+1.55083445645
+1.55083445645
+1.55083445645
+1.55083445645
+1.55083445645
+1.55571846134
+1.55571846134
+1.55571846134
+1.55571846134
+1.55571846134
+1.56060246622
+1.55571846134
+1.55083445645
+1.55571846134
+1.55571846134
+1.55083445645
+1.56060246622
+1.55571846134
+1.56060246622
+1.55571846134
+1.56060246622
+1.55571846134
+1.56060246622
+1.55571846134
+1.55571846134
+1.56060246622
+1.55571846134
+1.55571846134
+1.56060246622
+1.56060246622
+1.56060246622
+1.55571846134
+1.56060246622
+1.56060246622
+1.56548647111
+1.56060246622
+1.56548647111
+1.56060246622
+1.56548647111
+1.56060246622
+1.56060246622
+1.56060246622
+1.56060246622
+1.55571846134
+1.56548647111
+1.56060246622
+1.56548647111
+1.56060246622
+1.56548647111
+1.56060246622
+1.56548647111
+1.56060246622
+1.56548647111
+1.56060246622
+1.56060246622
+1.56060246622
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.57037047599
+1.56548647111
+1.56060246622
+1.56548647111
+1.56060246622
+1.56060246622
+1.56060246622
+1.56060246622
+1.56060246622
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.56060246622
+1.56060246622
+1.55571846134
+1.56060246622
+1.55571846134
+1.56060246622
+1.56060246622
+1.56060246622
+1.56060246622
+1.56060246622
+1.56548647111
+1.56060246622
+1.56548647111
+1.56548647111
+1.56060246622
+1.56060246622
+1.56548647111
+1.56060246622
+1.56060246622
+1.56060246622
+1.56060246622
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.56548647111
+1.56060246622
+1.56548647111
+1.56060246622
+1.56060246622
+1.56548647111
+1.56548647111
+1.57037047599
+1.56548647111
+1.57037047599
+1.57037047599
+1.56548647111
+1.56548647111
+1.56548647111
+1.56060246622
+1.56548647111
+1.57037047599
+1.56060246622
+1.56548647111
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+1.57037047599
+1.56060246622
+1.57037047599
+1.57037047599
+1.56548647111
+1.56548647111
+1.56548647111
+1.57037047599
+1.57037047599
+1.57037047599
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>3312 </ID>
+      <BroadcastTo>3 17 113 4106 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>ln(V)</DataObjectName>
+      <DataObjectShortName>ln(V)</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>3313</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>3</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits></ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1190326481</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>2</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag></ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1.1e-99</ColumnStart>
+      <ColumnEnd>1.1e-99</ColumnEnd>
+      <ColumnIncrement>1.1e-99</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>12</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>4171</ColumnGroupID>
+    </DataColumn>
+  </DataSet>
+  <DataSet>
+    <ID>4186 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>&#38;&#38;^% CurveFitFunctions %^&#38;&#38;</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetPosition>5</DataSetPosition>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>0</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <Metadata>
+      <DataMark>
+      </DataMark>
+      <DataTag>
+      </DataTag>
+    </Metadata>
+    <FunctionModel>
+      <ID>4187 </ID>
+      <BroadcastTo>1 105 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*(1-exp(-C*(t-t0)))+B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*(1-exp(-C*x))+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>15</FunctionModelType>
+      <FunctionCoefficientArray>3 -5.1881085547 0.140782898605 1.81107753767 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1.36955090294 0.0459289664671 1.3885766143 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>1</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>2.26479793709</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>4190 </ID>
+      <BroadcastTo>1 105 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*t)+B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 19.0249002203 0.937025927194 0.00201209781365 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 0.0656288684407 0.00116672863613 0.000389419084928 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>4193 </ID>
+      <BroadcastTo>1 105 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*(1-exp(-C*t))+B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*(1-exp(-C*x))+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>15</FunctionModelType>
+      <FunctionCoefficientArray>3 162828.253128 0.931150054085 -162826.688347 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 77.7170440162 6.0723787787e-05 0.000297812237933 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>4196 </ID>
+      <BroadcastTo>1 105 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*t)+B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 19.0124449282 0.936337232261 0.00120766542172 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 0.0589098392307 0.00104262643984 0.000321793794639 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>4199 </ID>
+      <BroadcastTo>1 105 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*t)+B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 10.8410321327 0.750579544232 -0.0557333368873 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 0.380308940303 0.0144356194157 0.00972675158941 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>4202 </ID>
+      <BroadcastTo>1 105 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*exp(-C*t)+B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*exp(-C*x)+B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>11</FunctionModelType>
+      <FunctionCoefficientArray>3 19.1033146163 0.938247433235 0.00221792966906 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 0.0590750724129 0.00107649537764 0.000384043402458 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+  </DataSet>
+  <DataSourceServer>
+    <ID>13 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <CalcColumnSource2>
+      <ID>3313 </ID>
+      <BroadcastTo>1 3312 </BroadcastTo>
+      <Visible>1</Visible>
+      <CalcEquation>ln("Potential")</CalcEquation>
+      <CalcOutColumnID>3312</CalcOutColumnID>
+      <CalcWantNANs>1</CalcWantNANs>
+      <CalcEquationEditable>1</CalcEquationEditable>
+    </CalcColumnSource2>
+    <MBLLabProSource>
+      <ID>4176 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <MBLPortRef>&#60;PortRef PortType="2" Location="\\?\usb#vid_08f7&#38;pid_0001#5&#38;1607cad2&#38;0&#38;3#{56150077-b844-49e6-b562-88498bfa2c2f}" DisplayName="\\?\usb#vid_08f7&#38;pid_0001#5&#38;1607cad2&#38;0&#38;3#{56150077-b844-49e6-b562-88498bfa2c2f}" /&#62;</MBLPortRef>
+      <MBLAnalogOutWaveForm>0</MBLAnalogOutWaveForm>
+      <MBLAnalogOutFrequency>1</MBLAnalogOutFrequency>
+      <MBLAnalogOutAmplitude>2</MBLAnalogOutAmplitude>
+      <MBLAnalogOutCreateConstant>0</MBLAnalogOutCreateConstant>
+      <MBLSerialNumber>0</MBLSerialNumber>
+      <MBLLabPro_EnhancedTiming>1</MBLLabPro_EnhancedTiming>
+    </MBLLabProSource>
+  </DataSourceServer>
+  <MBLBrain>
+    <MBLCollectionUserCollectMode>0</MBLCollectionUserCollectMode>
+    <MBLCollectionDropCounterMode>0</MBLCollectionDropCounterMode>
+    <MBLCollectionTimeUnit>1</MBLCollectionTimeUnit>
+    <MBLCollectionSampleAtZero>1</MBLCollectionSampleAtZero>
+    <MBLCollectionRepeat>0</MBLCollectionRepeat>
+    <MBLCollectionEnhancedTiming>1</MBLCollectionEnhancedTiming>
+    <MBLFastStart>0</MBLFastStart>
+    <MBLCollectionDeltaT>0.02</MBLCollectionDeltaT>
+    <MBLCollectionNumSamples>501</MBLCollectionNumSamples>
+    <MBLCollectionMaxDuration>10</MBLCollectionMaxDuration>
+    <MBLCollectionOversampling>1</MBLCollectionOversampling>
+    <MBLCollectionNumEWEColumns>1</MBLCollectionNumEWEColumns>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLCollectionSelectedEventTime>0</MBLCollectionSelectedEventTime>
+    <MBLCollectionSelectedEventName></MBLCollectionSelectedEventName>
+    <MBLCollectionSelectedEventShortName></MBLCollectionSelectedEventShortName>
+    <MBLCollectionSelectedEventUnits></MBLCollectionSelectedEventUnits>
+    <MBLCollectionEndDigitalAfterNum>0</MBLCollectionEndDigitalAfterNum>
+    <MBLCollectionNumDigitalEvents>10</MBLCollectionNumDigitalEvents>
+    <MBLCollectionTriggerEnabled>0</MBLCollectionTriggerEnabled>
+    <MBLTriggerType>0</MBLTriggerType>
+    <MBLTriggerValue>10</MBLTriggerValue>
+    <MBLTriggerUseConstant>0</MBLTriggerUseConstant>
+    <MBLTriggerConstant></MBLTriggerConstant>
+    <MBLTriggerPreTriggerData>0</MBLTriggerPreTriggerData>
+    <MBLRadiationInterval>5</MBLRadiationInterval>
+    <MBLRadiationIntervalTimeUnit>1</MBLRadiationIntervalTimeUnit>
+    <MBLStoreLatestMax>0</MBLStoreLatestMax>
+    <MBLEWEAverageData>0</MBLEWEAverageData>
+    <MBLSEAverageData>0</MBLSEAverageData>
+    <MBLContinuous>1</MBLContinuous>
+    <MBLCollectionMiniGCStartTemp>35</MBLCollectionMiniGCStartTemp>
+    <MBLCollectionMiniGCHoldTime>2</MBLCollectionMiniGCHoldTime>
+    <MBLCollectionMiniGCRampRate>5</MBLCollectionMiniGCRampRate>
+    <MBLCollectionMiniGCFinalTemp>65</MBLCollectionMiniGCFinalTemp>
+    <MBLCollectionMiniGCFinalHoldTime>12</MBLCollectionMiniGCFinalHoldTime>
+    <MBLCollectionMiniGCTotalLength>20</MBLCollectionMiniGCTotalLength>
+    <MBLCollectionMiniGCPressure>7</MBLCollectionMiniGCPressure>
+    <MBLChannel>
+      <MBLChannelIndex>1</MBLChannelIndex>
+      <MBLChannelSensorIDName>VP</MBLChannelSensorIDName>
+      <MBLChannelSensorAutoID>2</MBLChannelSensorAutoID>
+      <MBLChannelManualSetup>0</MBLChannelManualSetup>
+      <MBLChannelCalibrationStorage>2</MBLChannelCalibrationStorage>
+      <MBLChannelReverse>0</MBLChannelReverse>
+      <MBLChannelOffset>0</MBLChannelOffset>
+      <MBLChannelX4Mode>0</MBLChannelX4Mode>
+      <MBLChannelResetOnCollect>0</MBLChannelResetOnCollect>
+      <MBLChannelTrigger>0</MBLChannelTrigger>
+      <MBLCalibration>
+        <MBLCalibrationUnits>V</MBLCalibrationUnits>
+        <MBLCalibrationPrettyUnits>V</MBLCalibrationPrettyUnits>
+        <MBLCalibrationIDName>___ExpFile___</MBLCalibrationIDName>
+        <MBLCalibrationUserName>Voltage V</MBLCalibrationUserName>
+        <MBLCalibrationEquationType>1</MBLCalibrationEquationType>
+        <MBLCalibrationIDValue>2</MBLCalibrationIDValue>
+        <MBLCalibrationInterfaceOp>2</MBLCalibrationInterfaceOp>
+        <MBLCalibrationCoefficients>2 0.00504691 1 </MBLCalibrationCoefficients>
+        <MBLCalibrationYMin>-10</MBLCalibrationYMin>
+        <MBLCalibrationYMax>10</MBLCalibrationYMax>
+        <MBLCalibrationNumPlaces>3</MBLCalibrationNumPlaces>
+        <MBLCalibrationDDSIndex>0</MBLCalibrationDDSIndex>
+        <MBLCalibrationRangeDesc></MBLCalibrationRangeDesc>
+        <MBLCalibrationColumnName>Potential</MBLCalibrationColumnName>
+        <MBLCalibrationShortColumnName>Pot</MBLCalibrationShortColumnName>
+        <MBLCalibrationExperimentType>1</MBLCalibrationExperimentType>
+        <MBLCalibrationTrace>1</MBLCalibrationTrace>
+      </MBLCalibration>
+      <MBLColumnHeaderName>Potential</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Pot</MBLColumnHeaderShortName>
+      <MBLChannelMatch0>111
+Potential</MBLChannelMatch0>
+      <MBLSensorSourceID>4176</MBLSensorSourceID>
+      <MBLSensorPhotogateUnitsMeters>1</MBLSensorPhotogateUnitsMeters>
+      <MBLSensorPhotogateUnits>m</MBLSensorPhotogateUnits>
+      <MBLSensorOceanOpticsWavelength>-1</MBLSensorOceanOpticsWavelength>
+      <MBLSensorOceanOpticsWavelengthEnd>-1</MBLSensorOceanOpticsWavelengthEnd>
+      <MBLChannelZeroDefault>0</MBLChannelZeroDefault>
+    </MBLChannel>
+    <MBLGoogleMapsMarkerOptions>0</MBLGoogleMapsMarkerOptions>
+    <MBLGoogleMapsOpenAnnotations>0</MBLGoogleMapsOpenAnnotations>
+    <GoogleMapsSettings>
+      <GoogleMapsLatitudeColumnID>0</GoogleMapsLatitudeColumnID>
+      <GoogleMapsLongitudeColumnID>0</GoogleMapsLongitudeColumnID>
+      <GoogleMapsShowMarkers>1</GoogleMapsShowMarkers>
+      <GoogleMapsMarkerOptions>0</GoogleMapsMarkerOptions>
+      <GoogleMapsValueColumnID>0</GoogleMapsValueColumnID>
+      <GoogleMapsOpenAnnotations>0</GoogleMapsOpenAnnotations>
+      <GoogleMapsDrawLine>0</GoogleMapsDrawLine>
+      <GoogleMapsDrawLineSingleColor>0</GoogleMapsDrawLineSingleColor>
+      <GoogleMapsingleColor>0x0 0x0 0x0| 0xffff 0x2e</GoogleMapsingleColor>
+      <GoogleMapsDrawLineColumnID>2147483647</GoogleMapsDrawLineColumnID>
+      <GoogleMapsDrawLineAutoScale>0</GoogleMapsDrawLineAutoScale>
+      <GoogleMapsDrawLineSmooth>1</GoogleMapsDrawLineSmooth>
+      <GoogleMapsDrawLineMin>0</GoogleMapsDrawLineMin>
+      <GoogleMapsDrawLineMax>0</GoogleMapsDrawLineMax>
+    </GoogleMapsSettings>
+  </MBLBrain>
+  <FileCoherence>1</FileCoherence>
+</Document>

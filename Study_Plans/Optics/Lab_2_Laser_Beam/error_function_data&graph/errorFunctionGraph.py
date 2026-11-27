@@ -157,5 +157,5 @@ if SAVE_FIGURE:
 if SHOW_PLOT:
     plt.show()
 
-print(x, y)
+plt.plot(x, y)
 print(derivative)
